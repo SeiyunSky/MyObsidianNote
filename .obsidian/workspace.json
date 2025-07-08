@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -180,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "65ef5e3f6999041c",
   "lastOpenFiles": [
     "苍穹外卖/苍穹外卖.md",
     "Base Knoledge/SSM 笔记.md",
