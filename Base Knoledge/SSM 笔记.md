@@ -30,7 +30,10 @@ ApplicationContext 名字 = new ClassPathXmlApplicationContext("xml文件名")
 ```
 ```JAVA
 //获取BEAN
-类 对象名字 = 名字.getBean("BEAN的ID")
+类 对象名字 = (类) 名字.getBean("BEAN的ID")
+或者
+类 对象名字 = 名字.getBean("BEAN的ID",类.class)
+也能直接按类型，但没有意义
 ```
 
 
@@ -100,13 +103,85 @@ Setter注入
 <constructor-agr index="0" value=""/>
 ```
 
-### 自行装配
+#### 自行装配
 ```XML
 按照类型装配需要实现类必须唯一
 <bean id="给BEAN起个名字" class = "类" autowire= "byType"/>
 
 按照名称装配则可以Bean去做多个重复实现类,其中class中需要实现的对象的名称需要和对应的Bean名称一样
 <bean id="给BEAN起个名字" class = "类" autowire= "byName"/>
+
+集合的注入（简单类型）
+<property name="list/set/array">
+  <list/set/array>
+    <value>itcast</value>
+    <value>itheima</value>
+    <value>boxuegu</value>
+  </list/set/array>
+</property>
+
+<property name="map">
+  <map>
+    <entry key="country" value="china"/>
+    <entry key="province" value="henan"/>
+    <entry key="city" value="wuhan"/>
+  </map>
+</property>
+
+<property name="properties">  //props惊险字符串，用于纯配置项
+    <props>
+        <prop key="country">china</prop>
+        <prop key="province">china</prop>
+        <prop key="city">china</prop>
+    </props>
+</property>
 ```
 
-哇哇
+##### 案例：数据源对象管理
+```XML
+↓第三方，阿里提供的Druid库，通过缓存池优化数据库与后端数据传送关系
+<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver"/> 
+    <property name="url" value="jdbc:mysql://localhost:3306/db_name"/>
+    <property name="username" value="root"/> 
+    <property name="password" value="123456"/> 
+</bean>
+```
+实际上，第三方的东西也是可以通过创建BEAN，实例化，注入这个流程来进行的。
+
+#### 加载外部properties文件
+```XML
+1、开启context命名空间
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+    (1)    xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           
+    (2)    http://www.springframework.org/schema/context
+    (3)    http://www.springframework.org/schema/context/spring-context.xsd">
+2、利用命名空间加载properties文件
+<context:property-placeholder location = "classpath:* 对应的配置文件名字">
+
+3、${配置文件.属性名}
+```
+
+### 容器
+```JAVA
+1、加载类路径下的配置文件
+ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml")
+
+2、加载文件路径下的配置文件
+ApplicationContext ctx = new FileSystemXmlApplicationContext("绝对路径")
+
+3、
+
+```
+
+
+
+
+
