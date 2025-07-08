@@ -109,3 +109,4 @@ Setter注入
 <bean id="给BEAN起个名字" class = "类" autowire= "byName"/>
 ```
 
+哇哇
