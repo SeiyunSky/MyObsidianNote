@@ -1,7 +1,7 @@
 核心容器 -> 整合 -> AOP -> 事务
 
 
-### IOC核心概念
+## 核心概念
  - **IOC 控制反转**
     使用对象时，由主动new产生对象转换为外部提供对象，此过程中，对象创建控制权由程序转移到外部。
     Spring技术对IoC思想进行了实现，其提供了一个IoC容器。
@@ -54,9 +54,8 @@ ref表示参照哪一个Dao-->
 ```
 
 ### **Bean基础配置**
-
+![[Pasted image 20250708185039.png|500]]
 name相当于是一个bean的别名
-
 Spring默认生成的Bean是单例，如果要非默认，那就需要增加属性
 ```XML
 <  scope = "prototype"  >
@@ -86,13 +85,14 @@ init-method ="init" destory-method ="destory"
 
 
 ### **依赖注入**
+![[Pasted image 20250708185133.png|400]]
 方法：
     普通set
     构造方法
 - 包含引用类型和简单类型
 ```XML
 如下均写入对应Bean里
-Setter注入
+Setter注入 这个最重要
 <property name = "业务层中的类名" value="Beanid里的名字" />
 
 构造方法注入
@@ -177,11 +177,9 @@ ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.
 2、加载文件路径下的配置文件
 ApplicationContext ctx = new FileSystemXmlApplicationContext("绝对路径")
 
-3、
-
 ```
 
 
+## 注解开发
 
-
-
+### 

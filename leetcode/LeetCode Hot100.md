@@ -560,3 +560,75 @@ public:
     }
 };
 ```
+
+## 合并K个升序链表
+![[Pasted image 20250708185427.png|500]]
+```C++
+我的思路：按照list的长度，做一个败者树
+然后互相比拼，非空最小的上去
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+    //PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+    //Java可以直接使用PriorityQueue，输入排序方法即可
+    //Java利用poll和offer进行出入栈
+        using Elem = pair<int ,ListNode>
+        priority_queue<Elem,vector<Elem>,greater<Elem>> pq;
+        for(ListNode* node :lists) if(node){
+            pq.push({node->val,node});
+        } 
+        ListNode* head =nullptr;
+        ListNode* ptr = nullptr;
+        while(!pq.empty()){
+            Elem elem = pq.top();
+            pq.pop();
+            if(!head){
+                head = ptr = elem.second;
+            }else{
+                ptr ->next =elem.second;
+                ptr =elem.second;
+            }
+            if(elem.second->next){
+                pq.push({elem.second->next->val,elem.second->next});
+            }
+        }
+            return head;
+    }
+};
+```
+## K个一组翻转链表
+![[Pasted image 20250708202801.png|400]]
+```C++
+需要用五个指针，两个分别是头尾，两个负责前后跑，一个负责交换
+class Solution {
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        int n=0;
+        ListNode* cur=head;
+        while(cur){
+            n++;
+            cur=cur->next;
+        }
+        ListNode* dummy=new ListNode(0);
+        dummy->next=head;
+
+        ListNode* pre=dummy;
+        ListNode* p0=dummy;
+        cur=head;
+        for(int i=0;i<n/k;i++){
+            int k0=k;
+            while(k0--){
+                ListNode* nxt=cur->next;
+                cur->next=pre;
+                pre=cur;
+                cur=nxt;
+            }
+            ListNode* tmp=p0->next;
+            tmp->next=cur;
+            p0->next=pre;
+            p0=tmp;
+        }
+        return dummy->next;
+    }
+};
+```
