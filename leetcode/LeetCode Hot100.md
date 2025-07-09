@@ -632,3 +632,124 @@ public:
     }
 };
 ```
+
+## 随机链表的复制
+![[Pasted image 20250709193645.png|500]]
+```JAVA
+class Solution {
+    public Node copyRandomList(Node head) {
+        if (head == null) return null;
+        // 使用原节点作为key
+        Map<Node, Node> map = new HashMap<>();
+        Node dummy = new Node(0);
+        Node cur = dummy;
+        Node temp = head;
+        // 第一遍：创建新节点并建立映射
+        while (temp != null) {
+            Node newNode = new Node(temp.val);
+            map.put(temp, newNode);
+            cur.next = newNode;
+            cur = cur.next;
+            temp = temp.next;
+        }
+
+        // 第二遍：处理random指针
+        temp = head;
+        cur = dummy.next;
+        while (temp != null) {
+            // 处理可能为null的random指针
+            cur.random = temp.random != null ? map.get(temp.random) : null;
+            temp = temp.next;
+            cur = cur.next;
+        }
+        return dummy.next;
+    }
+}
+```
+
+## 最长连续序列
+![[Pasted image 20250709203648.png]]
+```JAVA
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        for(int num:nums){
+            set.add(num);
+        }
+        int maxLength = 0;
+        for (int num : set) {
+            if (!set.contains(num - 1)) {
+                int currentNum = num;
+                int currentLength = 1;
+                while (set.contains(currentNum + 1)) {
+                    currentNum++;
+                    currentLength++;
+                }
+                maxLength = Math.max(maxLength, currentLength);
+            }
+        }
+        return maxLength;        
+    }
+}
+```
+
+## **Java Set 接口及实现类语法速查**
+**核心实现类**  
+- `HashSet`：哈希表实现，无序，O(1)操作  
+- `LinkedHashSet`：保留插入顺序，哈希表+链表  
+- `TreeSet`：红黑树实现，自动排序，O(log n)操作  
+**基础操作**  
+```java
+Set<String> set = new HashSet<>();
+set.add("A");                 // 添加元素
+set.remove("A");              // 删除元素
+set.contains("A");            // 判断存在
+set.size();                   // 获取大小
+
+// for-each
+for (String s : set) { ... }
+// Iterator
+Iterator<String> it = set.iterator();
+set.forEach(s -> System.out.println(s));
+
+set1.addAll(set2);      // 并集
+set1.retainAll(set2);   // 交集
+set1.removeAll(set2);   // 差集
+
+// Treeset中自然排序
+Set<Integer> treeSet = new TreeSet<>(); 
+// 逆序排序
+Set<String> customSet = new TreeSet<>(Comparator.reverseOrder());
+//自定义排序，用其中的对象属性排序
+Set<String> set = new TreeSet<>(
+    (s1, s2) -> s1.length() - s2.length()
+);
+```
+## **Java Map核心实现类速查**  
+- **HashMap**：哈希表实现，无序，O(1)操作  
+- **LinkedHashMap**：保留插入/访问顺序，哈希表+链表  
+- **TreeMap**：红黑树实现，按键自动排序，O(log n)操作  
+- **ConcurrentHashMap**：线程安全分段哈希表  
+
+**基础操作**  
+```java
+Map<String, Integer> map = new HashMap<>();
+map.put("A", 1);          // 插入
+map.get("A");             // 查询
+map.remove("A");          // 删除
+map.forEach((k,v) -> ...); // 遍历
+
+// 自然排序
+Map<String, Integer> treeMap = new TreeMap<>(); 
+// 自定义排序
+Map<String, Integer> customMap = new TreeMap<>(
+    Comparator.comparingInt(String::length)
+);
+
+// 按值排序（需转List）
+map.entrySet().stream()
+   .sorted(Map.Entry.comparingByValue())
+   .collect(Collectors.toList());
+
+
+```
