@@ -692,68 +692,6 @@ class Solution {
     }
 }
 ```
-
-## **Java Set 接口及实现类语法速查**
-**核心实现类**  
-- `HashSet`：哈希表实现，无序，O(1)操作  
-- `LinkedHashSet`：保留插入顺序，哈希表+链表  
-- `TreeSet`：红黑树实现，自动排序，O(log n)操作  
-**基础操作**  
-```java
-Set<String> set = new HashSet<>();
-set.add("A");                 // 添加元素
-set.remove("A");              // 删除元素
-set.contains("A");            // 判断存在
-set.size();                   // 获取大小
-
-// for-each
-for (String s : set) { ... }
-// Iterator
-Iterator<String> it = set.iterator();
-set.forEach(s -> System.out.println(s));
-
-set1.addAll(set2);      // 并集
-set1.retainAll(set2);   // 交集
-set1.removeAll(set2);   // 差集
-
-// Treeset中自然排序
-Set<Integer> treeSet = new TreeSet<>(); 
-// 逆序排序
-Set<String> customSet = new TreeSet<>(Comparator.reverseOrder());
-//自定义排序，用其中的对象属性排序
-Set<String> set = new TreeSet<>(
-    (s1, s2) -> s1.length() - s2.length()
-);
-```
-## **Java Map核心实现类速查**  
-- **HashMap**：哈希表实现，无序，O(1)操作  
-- **LinkedHashMap**：保留插入/访问顺序，哈希表+链表  
-- **TreeMap**：红黑树实现，按键自动排序，O(log n)操作  
-- **ConcurrentHashMap**：线程安全分段哈希表  
-
-**基础操作**  
-```java
-Map<String, Integer> map = new HashMap<>();
-map.put("A", 1);          // 插入
-map.get("A");             // 查询
-map.remove("A");          // 删除
-map.forEach((k,v) -> ...); // 遍历
-
-// 自然排序
-Map<String, Integer> treeMap = new TreeMap<>(); 
-// 自定义排序
-Map<String, Integer> customMap = new TreeMap<>(
-    Comparator.comparingInt(String::length)
-);
-
-// 按值排序（需转List）
-map.entrySet().stream()
-   .sorted(Map.Entry.comparingByValue())
-   .collect(Collectors.toList());
-
-
-```
-
 ## LRU缓存
 ![[Pasted image 20250710120403.png]]
 ```JAVA
@@ -767,5 +705,79 @@ class LRUCache {
     public void put(int key, int value) {
 
     }
+}
+```
+
+## 排序链表
+![[Pasted image 20250710213139.png|500]]
+```JAVA
+class Solution {
+    public ListNode sortList(ListNode head) {
+        //归并算法,拆开大于三个的东西，然后归并启动
+        if(head==null || head.next == null)
+        return head;
+        ListNode slow = head,fast = head.next;
+        while(fast!=null && fast.next!=null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        ListNode mid = slow.next;
+        slow.next = null;
+        ListNode l = sortList(head);
+        ListNode r = sortList(mid);
+        return merge(l,r);
+    }
+    
+    public ListNode merge(ListNode l1,ListNode l2){
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        while (l1 != null && l2 != null) {
+        if (l1.val < l2.val) {
+            curr.next = l1;
+            l1 = l1.next;
+        } else {
+            curr.next = l2;
+            l2 = l2.next;
+        }
+        curr = curr.next;
+        }
+      curr.next = (l1 != null) ? l1 : l2;
+      return dummy.next;
+    }
+}
+```
+
+## 快速排序
+```JAVA
+public class QuickSort {
+    public static void quickSort(int[] arr) {
+        if (arr == null || arr.length <= 1) {
+            return; // 边界条件：空数组或单元素数组无需排序
+        }
+        quickSort(arr, 0, arr.length - 1); // 调用递归排序
+    }
+    
+    private static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            // 分区操作，返回基准值的正确位置
+            int pivotIndex = partition(arr, low, high);
+            // 递归排序左子数组（小于基准值的部分）
+            quickSort(arr, low, pivotIndex - 1);
+            // 递归排序右子数组（大于基准值的部分）
+            quickSort(arr, pivotIndex + 1, high);
+        }
+    }
+    private static int partition(int[] arr, int low, int high) {
+        int pivot = arr[high]; // 选择最右侧元素作为基准值
+        int i = low - 1;       // i 是小于基准值的区域的边界
+        for (int j = low; j < high; j++) {
+            if (arr[j] < pivot) {
+                i++;
+                swap(arr, i, j); // 将小于基准值的元素交换到左侧
+            }
+        }
+        swap(arr, i + 1, high);  // 将基准值放到正确位置
+        return i + 1;            // 返回基准值的索引
+    }
 }
 ```
