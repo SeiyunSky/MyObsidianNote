@@ -753,3 +753,19 @@ map.entrySet().stream()
 
 
 ```
+
+## LRU缓存
+![[Pasted image 20250710120403.png]]
+```JAVA
+class LRUCache {
+    public LRUCache(int capacity) {
+
+    }
+    public int get(int key) {
+
+    }
+    public void put(int key, int value) {
+
+    }
+}
+```

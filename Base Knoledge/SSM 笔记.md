@@ -180,6 +180,4 @@ ApplicationContext ctx = new FileSystemXmlApplicationContext("绝对路径")
 ```
 
 
-## 注解开发
-
-### 
+## 注解开发自定义BEAN
