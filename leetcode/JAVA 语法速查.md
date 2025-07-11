@@ -43,6 +43,10 @@ map.put("A", 1);          // 插入
 map.get("A");             // 查询
 map.remove("A");          // 删除
 map.forEach((k,v) -> ...); // 遍历
+map.containsKey(key)/containsValue(value) //检查存在性
+int size = map.size();
+boolean isEmpty = map.isEmpty();
+map.replace("B", 3); //替换已存在的键
 
 // 自然排序
 Map<String, Integer> treeMap = new TreeMap<>(); 
@@ -51,12 +55,13 @@ Map<String, Integer> customMap = new TreeMap<>(
     Comparator.comparingInt(String::length)
 );
 
+直接操作某个键值对，用的是地址
+Map.Entry<Integer, Integer> entry = list.get(i);
+
 // 按值排序（需转List）
 map.entrySet().stream()
    .sorted(Map.Entry.comparingByValue())
    .collect(Collectors.toList());
-
-
 ```
 
 ## **Java List 接口及实现类语法速查​**​
@@ -68,7 +73,9 @@ map.entrySet().stream()
 List<String> list1 = new ArrayList<>();  // 空列表
 
 List<Integer> list2 = new LinkedList<>(Arrays.asList(1, 2, 3));  // 初始化元素
+
 LinkedList<String> linkedList = new LinkedList<>();
+这些FL方法，必须直接以Linklist来构造，不然没有，还是得以list来做
 linkedList.addFirst("A");    // 头部插入 O(1)
 linkedList.addLast("B");     // 尾部插入 O(1)
 linkedList.removeFirst();    // 头部删除 O(1)
@@ -128,3 +135,155 @@ String[] array = list.toArray(new String[0]);
 List<String> immutableList = Arrays.asList("A", "B", "C");
 // 深拷贝
 List<String> copy = new ArrayList<>(list);
+```
+
+## 双向链表
+```JAVA
+class Node<T> {
+    T data;          // 存储数据
+    Node<T> prev;    // 前驱指针
+    Node<T> next;    // 后继指针
+
+    public Node(T data) {
+        this.data = data;
+        this.prev = null;
+        this.next = null;
+    }
+}
+```
+
+```java
+双向链表类
+public class DoublyLinkedList<T> {
+    private Node<T> head;  // 头节点
+    private Node<T> tail;  // 尾节点
+    private int size;      // 链表长度
+
+    public DoublyLinkedList() {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+
+    // 判断链表是否为空
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    // 返回链表长度
+    public int size() {
+        return size;
+    }
+
+    // 在链表头部插入节点
+    public void addFirst(T data) {
+        Node<T> newNode = new Node<>(data);
+        if (isEmpty()) {
+            head = tail = newNode;
+        } else {
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
+        size++;
+    }
+
+    // 在链表尾部插入节点
+    public void addLast(T data) {
+        Node<T> newNode = new Node<>(data);
+        if (isEmpty()) {
+            head = tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+        }
+        size++;
+    }
+
+    // 删除链表头部节点
+    public T removeFirst() {
+        if (isEmpty()) {
+            throw new IllegalStateException("链表为空");
+        }
+        T data = head.data;
+        head = head.next;
+        if (head != null) {
+            head.prev = null;
+        } else {
+            tail = null; // 链表已空
+        }
+        size--;
+        return data;
+    }
+
+    // 删除链表尾部节点
+    public T removeLast() {
+        if (isEmpty()) {
+            throw new IllegalStateException("链表为空");
+        }
+        T data = tail.data;
+        tail = tail.prev;
+        if (tail != null) {
+            tail.next = null;
+        } else {
+            head = null; // 链表已空
+        }
+        size--;
+        return data;
+    }
+
+    // 删除指定值的节点（从头开始搜索）
+    public boolean remove(T data) {
+        Node<T> current = head;
+        while (current != null) {
+            if (current.data.equals(data)) {
+                if (current == head) {
+                    removeFirst();
+                } else if (current == tail) {
+                    removeLast();
+                } else {
+                    current.prev.next = current.next;
+                    current.next.prev = current.prev;
+                    size--;
+                }
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    // 查找节点是否存在
+    public boolean contains(T data) {
+        Node<T> current = head;
+        while (current != null) {
+            if (current.data.equals(data)) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    // 打印链表（从头到尾）
+    public void printForward() {
+        Node<T> current = head;
+        while (current != null) {
+            System.out.print(current.data + " -> ");
+            current = current.next;
+        }
+        System.out.println("null");
+    }
+
+    // 打印链表（从尾到头）
+    public void printBackward() {
+        Node<T> current = tail;
+        while (current != null) {
+            System.out.print(current.data + " -> ");
+            current = current.prev;
+        }
+        System.out.println("null");
+    }
+}
+```

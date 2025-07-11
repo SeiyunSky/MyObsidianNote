@@ -79,7 +79,7 @@ class Solution {
 }
 ```
 
-## **轮转数组** 
+## 轮转数组 
 ![[Pasted image 20250626180424.png|500]]
 ```C++
 我的想法：
@@ -694,16 +694,54 @@ class Solution {
 ```
 ## LRU缓存
 ![[Pasted image 20250710120403.png]]
+A、方案：LinkedList解决
+但这样不行，因为删除的复杂度是O(n)
+
+需要自定义一个双向链表，利用存储key和node的map、
+当map内存在时，读取node，把他放在头部
+当map不存在时，读取链表最后一个元素，删除map内的他，修改头尾关系
+所以难度就在于写一个双向链表的应用相关接口
 ```JAVA
 class LRUCache {
+//思路，头插，去尾，如果get到了，相当于进行一个头中置换
+//如果没get到，相当于是新的东西，直接去尾部找，如果已经满了，那么就去尾
+//那也就是说，我还需要存一个当前的capacity，每次插入更新此数值
+    private final int capacity;
+    private final LinkedList<Map.Entry<Integer, Integer>> list;
     public LRUCache(int capacity) {
-
+        this.capacity =capacity;
+        this.list = new LinkedList<>();
     }
     public int get(int key) {
-
+        for(int i = 0; i < list.size(); i++) {
+        Map.Entry<Integer, Integer> entry = list.get(i);
+        if(entry.getKey() == key) {
+            // 找到key，将其移到列表头部
+            int value = entry.getValue();
+            list.remove(i);
+            list.addFirst(Map.entry(key, value));
+            return value;
+        }
+        }
+        // 没找到key
+        return -1;
     }
     public void put(int key, int value) {
-
+        for (int i = 0; i < list.size(); i++) {
+        Map.Entry<Integer, Integer> entry = list.get(i);
+        if (entry.getKey().equals(key)) {
+            list.remove(i);
+            list.addFirst(Map.entry(key, value));
+            return;
+        }
+        }
+        if (list.size() == capacity) {
+        list.removeLast();
+        }
+        list.addFirst(Map.entry(key, value));
+    }
+    public int getCapaNow(){
+        return this.capacity - list.size();
     }
 }
 ```
