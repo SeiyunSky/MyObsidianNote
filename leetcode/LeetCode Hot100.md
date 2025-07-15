@@ -819,3 +819,46 @@ public class QuickSort {
     }
 }
 ```
+## 对称二叉树
+![[Pasted image 20250715102815.png|400]]
+```java
+核心，return中递归+判断
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        return helper(root.left, root.right);
+    }
+    public boolean helper(TreeNode left, TreeNode right) {
+        if (left==null &&right==null) return true;
+        if (left==null || right==null) return false;
+        return left.val == right.val && helper(left.left, right.right) && helper(left.right, right.left);
+    }
+}
+```
+
+## 二叉树的直径
+![[Pasted image 20250715104441.png]]
+```JAVA
+class Solution {
+    int ret = 0;
+    public int diameterOfBinaryTree(TreeNode root) {
+        //也就是递归寻找当前节点左右最深的情况，让每个节点都作为根节点去判定一次即可
+        if(root!=null){
+        ret = Math.max(ret,counter(root));
+        ret = Math.max(ret,diameterOfBinaryTree(root.left));
+        ret = Math.max(ret,diameterOfBinaryTree(root.right));}
+        return ret;
+    }
+    private int counter(TreeNode root){
+        if(root ==null)
+            return 0;
+        int l = check(root.left);
+        int r = check(root.right);
+        return l+r;
+    }
+    private int check(TreeNode node){
+        if(node == null)
+            return 0;
+        return 1+Math.max(check(node.left),check(node.right));
+    }
+}
+```
