@@ -56,6 +56,26 @@ action();
 单例模式即所谓的一个类仅仅一个实例，类只在内部实例一次，然后提供该实例
 1、全局唯一。2、只能自己创建自己的唯一实例
 
+```Csharp
+public class Mysingleton{
+	//内部的自己
+	private static MySingletion _instance;
+	//外部调用接口
+	public static MySingletion instance{
+		get{
+			if(_instance == null)
+			  _instance = nuew MySingleton();
+			return _instance;
+		}
+	};
+}
 ```
 
+## 观察者模式
+观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象，这个主题对象状态发生变化时，会通知所有观察者对象，使其可以自动更新自己。通常被用于实现事件处理系统。
+```Csharp
+       利用多播委托
+       通过+=来实现，每多一个观察者对象
+       就在对应的【1】上多承载一个方法，
+       因此结束后也需要主动销毁对应方法       
 ```

@@ -182,8 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,7 +195,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ac9e1d022d4b98dc",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
     "Unity",
     "项目笔记：SaaS短链接/用户模块.md",
