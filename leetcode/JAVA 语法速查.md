@@ -287,3 +287,138 @@ public class DoublyLinkedList<T> {
     }
 }
 ```
+
+## **Java Queue 接口及实现类语法速查**
+```JAVA
+
+class QueueCheatsheet {
+
+    /**
+     * ================================
+     * ||       核心实现类 (Core)       ||
+     * ================================
+     *
+     * - LinkedList:   基于双向链表，也实现了 Deque 接口，在两端增删效率高 (O(1))。
+     * - ArrayDeque:   基于可动态调整大小的数组，也实现了 Deque 接口，在两端增删的平摊时间复杂度为 O(1)。通常比 LinkedList 更高效。
+     * - PriorityQueue: 基于优先堆的无界优先级队列。元素按自然顺序或自定义 Comparator 排序。
+     */
+    void coreImplementations() {
+        // 作为队列使用时，推荐使用 ArrayDeque
+        Queue<String> queue1 = new ArrayDeque<>();  // 空队列
+
+        // LinkedList 也可以作为队列
+        Queue<Integer> queue2 = new LinkedList<>(Arrays.asList(1, 2, 3));  // 初始化元素
+
+        // 优先级队列，默认是小顶堆（自然排序）
+        Queue<Integer> priorityQueue = new PriorityQueue<>();
+
+        // ArrayDeque 作为双端队列，功能更强大
+        Deque<String> deque = new ArrayDeque<>();
+        deque.addFirst("A"); // 头部插入
+        deque.addLast("B");  // 尾部插入
+    }
+
+
+    public static void main(String[] args) {
+        Queue<String> queue = new ArrayDeque<>();
+
+        // ================================
+        // ||         增 (Offer/Add)       ||
+        // ================================
+        // offer(E e): 将元素添加到队尾，如果队列容量有限且已满，返回 false。推荐使用。
+        queue.offer("Java");
+        queue.offer("Python");
+        // add(E e):    将元素添加到队尾，如果队列容量有限且已满，会抛出 IllegalStateException 异常。
+        queue.add("Go");
+
+
+        // ================================
+        // ||         删 (Poll/Remove)     ||
+        // ================================
+        // poll():   获取并移除队首元素，如果队列为空，返回 null。推荐使用。
+        String polledElement = queue.poll(); // "Java"
+        System.out.println("Poll 之后: " + queue + ", 被移除的元素: " + polledElement); // [Python, Go]
+        // remove(): 获取并移除队首元素，如果队列为空，会抛出 NoSuchElementException 异常。
+        String removedElement = queue.remove(); // "Python"
+
+
+        // ================================
+        // ||         查 (Peek/Element)    ||
+        // ================================
+        queue.offer("Rust");
+        System.out.println("再次添加元素后: " + queue); // [Go, Rust]
+        // peek():    获取但不移除队首元素，如果队列为空，返回 null。推荐使用。
+        String peekedElement = queue.peek(); // "Go"
+        System.out.println("Peek 之后: " + queue + ", 查看的元素: " + peekedElement); // [Go, Rust]
+        // element(): 获取但不移除队首元素，如果队列为空，会抛出 NoSuchElementException 异常。
+        String element = queue.element(); // "Go"
+        System.out.println("Element 之后: " + queue + ", 查看的元素: " + element); // [Go, Rust]
+
+        // 其他常用方法
+        int size = queue.size();            // 获取大小
+        boolean isEmpty = queue.isEmpty();  // 判空
+        queue.clear();                      // 清空队列
+
+
+        // ================================
+        // ||         遍历 (Iteration)     ||
+        // ================================
+        Queue<String> travelQueue = new ArrayDeque<>(Arrays.asList("A", "B", "C"));
+        // 增强 for 循环
+        System.out.print("增强 for 循环遍历: ");
+        for (String item : travelQueue) {
+            System.out.print(item + " "); // A B C
+        }
+        System.out.println();
+
+        // Iterator (注意：遍历不保证顺序，特别是对于 PriorityQueue)
+        System.out.print("Iterator 遍历: ");
+        Iterator<String> it = travelQueue.iterator();
+        while (it.hasNext()) {
+            System.out.print(it.next() + " "); // A B C
+        }
+        System.out.println();
+
+
+        // ================================
+        // ||   排序 (PriorityQueue)      ||
+        // ================================
+        // 自然排序（元素需实现 Comparable），默认小顶堆
+        PriorityQueue<Integer> pqNatural = new PriorityQueue<>();
+        pqNatural.offer(5);
+        pqNatural.offer(2);
+        pqNatural.offer(8);
+        System.out.println("PriorityQueue 自然排序 (poll): " + pqNatural.poll() + ", " + pqNatural.poll() + ", " + pqNatural.poll()); // 2, 5, 8
+
+        // 自定义排序（Comparator），通过构造函数传入
+        // 按字符串长度排序
+        PriorityQueue<String> pqCustom = new PriorityQueue<>((s1, s2) -> s1.length() - s2.length());
+        pqCustom.offer("JavaScript");
+        pqCustom.offer("Go");
+        pqCustom.offer("Java");
+        System.out.print("PriorityQueue 按长度排序 (poll): ");
+        while(!pqCustom.isEmpty()) {
+            System.out.print(pqCustom.poll() + " "); // Go Java JavaScript
+        }
+        System.out.println();
+
+        // 大顶堆 (逆序排序)
+        PriorityQueue<Integer> pqReverse = new PriorityQueue<>(Comparator.reverseOrder());
+        pqReverse.offer(5);
+        pqReverse.offer(2);
+        pqReverse.offer(8);
+        System.out.println("PriorityQueue 逆序排序 (poll): " + pqReverse.poll() + ", " + pqReverse.poll() + ", " + pqReverse.poll()); // 8, 5, 2
+
+        // 对象属性排序
+        PriorityQueue<Person> people = new PriorityQueue<>(Comparator.comparing(Person::getName));
+        people.offer(new Person("Bob"));
+        people.offer(new Person("Alice"));
+        people.offer(new Person("Charlie"));
+        System.out.print("PriorityQueue 按对象属性排序 (poll): ");
+        while(!people.isEmpty()){
+            System.out.print(people.poll().getName() + " "); // Alice Bob Charlie
+        }
+        System.out.println();
+    }
+}
+```

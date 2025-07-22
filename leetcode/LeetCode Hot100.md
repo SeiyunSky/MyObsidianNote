@@ -862,3 +862,117 @@ class Solution {
     }
 }
 ```
+## 二叉树的层序遍历
+![[Pasted image 20250722112314.png|500]]
+```JAVA
+使用双端链表，通过队列实现，进行层序遍历
+class Solution {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            int levelSize = queue.size();
+            List<Integer> currentLevel = new ArrayList<>();
+            for (int i = 0; i < levelSize; i++) {
+                TreeNode node = queue.poll();
+                currentLevel.add(node.val);
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+            }
+            result.add(currentLevel);
+        }
+        return result;
+    }
+}
+```
+
+## 二叉树展开为链表
+![[Pasted image 20250722113837.png|400]]
+```JAVA
+利用前驱节点特性，进行原地转换
+找到当前节点子树最右节点，即是当前节点右树的父节点
+class Solution {
+    public void flatten(TreeNode root) {
+        TreeNode curr = root;
+        while (curr != null) {
+            // 如果有左子树
+            if (curr.left != null) {
+                TreeNode predecessor = curr.left;
+                while (predecessor.right != null) {
+                    predecessor = predecessor.right;
+                }
+                predecessor.right = curr.right;
+                curr.right = curr.left;
+                curr.left = null;
+            }
+            curr = curr.right;
+        }
+    }
+}
+```
+
+## 二叉树的右视图
+![[Pasted image 20250722115814.png|400]]
+```JAVA
+ //相当于我要找到每一层最左边的东西
+ //也就是，层序遍历的同时
+ //当i到了levelsize-1的时候，记录当前数值
+class Solution {
+    public List<Integer> rightSideView(TreeNode root) {
+        List<Integer> ret = new ArrayList();
+        if(root == null)
+            return ret;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int levelSize = queue.size();
+            for(int i = 0 ; i<levelSize;i++){
+                TreeNode node = queue.poll();
+                if (i == levelSize - 1){
+                    ret.add(node.val);
+                }
+
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+            }
+        }
+        return ret;        
+    }
+}
+```
+
+## 
+
+```JAVA
+class Solution {
+    // 使用一个变量来记录中序遍历过程中，前一个节点的值。
+    // 使用 Long 类型是为了处理边界情况，比如当节点的 val 是 Integer.MIN_VALUE 时。
+    // 初始化为一个比所有 int 都小的值。
+    private long preValue = Long.MIN_VALUE;
+    public boolean isValidBST(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        if (!isValidBST(root.left)) {
+            return false;
+        }
+        if (root.val <= preValue) {
+            return false;
+        }
+        preValue = root.val;
+        return isValidBST(root.right);
+    }
+}
+```
