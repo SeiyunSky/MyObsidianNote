@@ -79,3 +79,37 @@ public class Mysingleton{
        就在对应的【1】上多承载一个方法，
        因此结束后也需要主动销毁对应方法       
 ```
+
+## 简单工厂模式
+属于创建型模式，又叫静态工厂方法模式，只生产一种类型，在工厂中动态创建。
+```Csharp
+//利用命名空间
+namespace{
+ public abstract class AbstructMouse{
+    构造抽象类
+ }
+}
+
+public class HPMouse:Factor.AbstructMouse{
+    
+}
+
+using Factor;
+public class DellMouse:AbstructMouse{
+    
+}
+```
+
+## 工厂模式
+```Csharp
+
+在简单工厂之间，创建一个中间件，进而实现类型创建
+
+```
+
+## 抽象工厂模式
+```Csharp
+
+
+
+```
