@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -194,8 +195,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "ac9e1d022d4b98dc",
   "lastOpenFiles": [
+    "Pasted image 20250722165059.png",
+    "Pasted image 20250722164457.png",
+    "Pasted image 20250722164208.png",
     "项目笔记：SaaS短链接/图片",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722144709.png",
     "leetcode/LeetCode Hot100.md",
@@ -214,8 +218,6 @@
     "Fit5222/FIT Week 4B.md",
     "Fit5222/图片/Pasted image 20250721170140.png",
     "Fit5222/图片/Pasted image 20250721170055.png",
-    "Fit5222/图片/Pasted image 20250721165647.png",
-    "Fit5222/图片/Pasted image 20250721165551.png",
     "简历项目预备.md",
     "项目笔记：苍穹外卖/苍穹外卖.md",
     "Java/Java并发与框架部分知识.md",
@@ -240,7 +242,6 @@
     "FIT5238/chapter15_Sparsity/models.py",
     "FIT5238/chapter15_Sparsity/main.py",
     "FIT5238/chapter15_Sparsity/figures",
-    "FIT5238/chapter15_Sparsity/datasets.py",
-    "FIT5238/chapter15_Sparsity/client.py"
+    "FIT5238/chapter15_Sparsity/datasets.py"
   ]
 }
