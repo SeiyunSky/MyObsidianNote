@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "63a5ac92bee0ac9e",
+        "id": "91a347422a91f2a6",
         "type": "tabs",
         "children": [
           {
-            "id": "48239e4f2e7623f2",
+            "id": "1f99eb5742518c77",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity/2、Unity组件思想.md",
+                "file": "项目笔记：SaaS短链接/用户模块.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2、Unity组件思想"
+              "title": "用户模块"
             }
           }
         ]
@@ -181,6 +181,9 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "项目笔记：SaaS短链接/短链接分组模块.md",
+    "第一部分：模型复杂度和模型选择 (共46分).md",
+    "Unity/2、Unity组件思想.md",
     "MySQL/1、DDL.md",
     "Unity/1、Csharp设计模式专题.md",
     "IDea/Everthing is alive.md",
@@ -189,7 +192,6 @@
     "Unity/3、UI系统.md",
     "Unity/6、输入系统.md",
     "项目笔记：苍穹外卖/苍穹外卖.md",
-    "Unity/2、Unity组件思想.md",
     "d57a54fc100f087a052372aaf528ab89.jpg",
     "Unity/5、Unity资源管理.md",
     "Pasted image 20250723101024.png",
@@ -220,8 +222,6 @@
     "简历项目预备.md",
     "Fit5222/FIT5222 Laboratory.md",
     "Fit5222/FIT Week2B.md",
-    "Fit5222/Fit5222 Week3.md",
-    "项目实战-套餐管理.md",
     "FIT5238/chapter15_Sparsity/utils/conf.json",
     "FIT5238/chapter15_Sparsity/utils",
     "FIT5238/chapter15_Sparsity/server.py",
