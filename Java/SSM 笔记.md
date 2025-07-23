@@ -181,3 +181,68 @@ ApplicationContext ctx = new FileSystemXmlApplicationContext("绝对路径")
 
 
 ## 注解开发自定义BEAN
+**1、使用配置文件方法**
+
+**使用开发注解定义bean**
+@Component 
+@Service (服务层)
+@Repository (数据层)
+@Controller (控制层)
+
+**在XML中配置文件**
+```xml
+<context:component-scan base-package="类所在的软件包"/>
+```
+
+ **2、使用配置类方法** **纯注解开发模式**
+ @Configuration （配置类）
+ @ComponentScan({"对应包的名字"，"对应包的名字"})
+ @PropertySoure({"配置的位置"})
+ 设置一个配置类
+
+**Bean作用范围与生命周期**
+```JAVA
+使用@Scope定义bean作用范围
+@PostConstuct 和 @PreDestory 定义生命周期
+
+@Repository
+@Scope("singleton")
+public class 类{
+
+@PostConstuct  
+public void init(){
+
+}
+
+@PreDestory 
+public void destory(){
+
+}
+}
+```
+
+**自动装配**
+@Autowired
+@Qualifier("名称") ←出现多个相同类型的Bean时，用此指定对应Bean
+
+自动装配建议提供无参构造方法（）Component自动提供
+
+@Value("数值")  ←简单类型值注入，可以和配置文件共通
+
+### 注解开发管理第三方Bean
+```java
+ 1.定义一个方法获得要管理的对象
+ 2.添加@Bean，表示返回值是一个Bean
+ @Bean
+ public DataSource datasource(){
+     DruidDataSource ds = new DuridDataSource();
+
+     按照对应的属性写入值;
+
+     return ds;
+ }
+
+3.在配置类上写入，导入式，或者扫描（但扫描不好看）
+@Import(第三方类.class)
+```
+
