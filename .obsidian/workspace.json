@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/SSM 笔记.md",
+                "file": "Unity/Unity学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SSM 笔记"
+              "title": "Unity学习"
             }
           }
         ]
@@ -181,14 +181,18 @@
   },
   "active": "1d5c4349be7ccfdf",
   "lastOpenFiles": [
-    "Java/Java并发与框架部分知识.md",
     "Java/SSM 笔记.md",
+    "Java/知识碎片/设计原则.md",
+    "Java/知识碎片/注解.md",
+    "Java/知识碎片/IoC 和 APO.md",
+    "Java/知识碎片/Java并发与框架部分知识.md",
+    "Java/知识碎片",
+    "Pasted image 20250723094842.png",
+    "Java/图片/Pasted image 20250723094829.png",
+    "Unity/Unity学习.md",
+    "推荐算法学习.md",
     "项目笔记：SaaS短链接/用户模块.md",
     "Java/部分注解作用.md",
-    "Java/注解.md",
-    "Java/IoC 和 APO.md",
-    "Unity/Unity学习.md",
-    "Java/设计原则.md",
     "leetcode/LeetCode Hot100.md",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722203624.png",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722191625.png",
@@ -199,11 +203,8 @@
     "项目笔记：SaaS短链接/图片/Pasted image 20250722164208.png",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722165059.png",
     "项目笔记：SaaS短链接/图片",
-    "项目笔记：SaaS短链接/图片/Pasted image 20250722144709.png",
-    "f85ae2b0f3d675621dfe6c50286bb92b.png",
     "leetcode/JAVA 语法速查.md",
     "Unity",
-    "推荐算法学习.md",
     "项目笔记：SaaS短链接",
     "项目实战要求.md",
     "Fit5222/FIT Week 4B.md",
@@ -224,7 +225,6 @@
     "FIT5238/chapter15_Sparsity/server.py",
     "FIT5238/chapter15_Sparsity/models.py",
     "FIT5238/chapter15_Sparsity/main.py",
-    "FIT5238/chapter15_Sparsity/figures",
-    "FIT5238/chapter15_Sparsity/datasets.py"
+    "FIT5238/chapter15_Sparsity/figures"
   ]
 }

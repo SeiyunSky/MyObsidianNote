@@ -246,3 +246,5 @@ public void destory(){
 @Import(第三方类.class)
 ```
 
+**XML配置对比注解配置**
+![[Pasted image 20250723094829.png]]
