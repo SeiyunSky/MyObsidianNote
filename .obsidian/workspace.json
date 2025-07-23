@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MySQL/1、DDL.md",
+                "file": "Unity/2、Unity组件思想.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1、DDL"
+              "title": "2、Unity组件思想"
             }
           }
         ]
@@ -181,8 +181,9 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
-    "IDea/Everthing is alive.md",
     "MySQL/1、DDL.md",
+    "Unity/1、Csharp设计模式专题.md",
+    "IDea/Everthing is alive.md",
     "MySQL",
     "推荐算法学习.md",
     "Unity/3、UI系统.md",
@@ -191,7 +192,6 @@
     "Unity/2、Unity组件思想.md",
     "d57a54fc100f087a052372aaf528ab89.jpg",
     "Unity/5、Unity资源管理.md",
-    "Unity/1、Csharp设计模式专题.md",
     "Pasted image 20250723101024.png",
     "Unity/4、导航系统.md",
     "Java/SSM 笔记.md",
