@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity/Unity学习.md",
+                "file": "Unity/3、UI系统.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unity学习"
+              "title": "3、UI系统"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -181,6 +182,14 @@
   },
   "active": "1d5c4349be7ccfdf",
   "lastOpenFiles": [
+    "Unity/2、Unity组件思想.md",
+    "d57a54fc100f087a052372aaf528ab89.jpg",
+    "Unity/5、Unity资源管理.md",
+    "推荐算法学习.md",
+    "Unity/1、Csharp设计模式专题.md",
+    "Pasted image 20250723101024.png",
+    "Unity/4、导航系统.md",
+    "Unity/3、UI系统.md",
     "Java/SSM 笔记.md",
     "Java/知识碎片/设计原则.md",
     "Java/知识碎片/注解.md",
@@ -189,8 +198,6 @@
     "Java/知识碎片",
     "Pasted image 20250723094842.png",
     "Java/图片/Pasted image 20250723094829.png",
-    "Unity/Unity学习.md",
-    "推荐算法学习.md",
     "项目笔记：SaaS短链接/用户模块.md",
     "Java/部分注解作用.md",
     "leetcode/LeetCode Hot100.md",
@@ -200,8 +207,6 @@
     "项目笔记：SaaS短链接/图片/Pasted image 20250722175050.png",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722174206.png",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722164457.png",
-    "项目笔记：SaaS短链接/图片/Pasted image 20250722164208.png",
-    "项目笔记：SaaS短链接/图片/Pasted image 20250722165059.png",
     "项目笔记：SaaS短链接/图片",
     "leetcode/JAVA 语法速查.md",
     "Unity",
@@ -216,10 +221,6 @@
     "项目实战-套餐管理.md",
     "IDea/Everthing is alive.md",
     "FIT5238/chapter15_Homomorphic_Encryption/README.md",
-    "FIT5238/chapter15_Sparsity/README.md",
-    "FIT5238/15.1.3 恶意数据集样例.md",
-    "FIT5238/15.4：同态加密.md",
-    "FIT5238/15.2：联邦差分隐私.md",
     "FIT5238/chapter15_Sparsity/utils/conf.json",
     "FIT5238/chapter15_Sparsity/utils",
     "FIT5238/chapter15_Sparsity/server.py",

@@ -107,9 +107,6 @@ public class DellMouse:AbstructMouse{
 
 ```
 
-## 抽象工厂模式
-```Csharp
+## 适配器模式
+用一个工具类去进行转换
 
-
-
-```
