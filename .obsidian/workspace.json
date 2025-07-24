@@ -11,14 +11,10 @@
             "id": "1f99eb5742518c77",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "项目笔记：SaaS短链接/用户模块.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "用户模块"
+              "title": "新标签页"
             }
           }
         ]
@@ -181,6 +177,9 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "FIT5201_1.md",
+    "output_16_0.png",
+    "项目笔记：SaaS短链接/用户模块.md",
     "项目笔记：SaaS短链接/短链接分组模块.md",
     "第一部分：模型复杂度和模型选择 (共46分).md",
     "Unity/2、Unity组件思想.md",
@@ -204,7 +203,6 @@
     "Java/知识碎片",
     "Pasted image 20250723094842.png",
     "Java/图片/Pasted image 20250723094829.png",
-    "项目笔记：SaaS短链接/用户模块.md",
     "Java/部分注解作用.md",
     "LeetCode/LeetCode Hot100.md",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722203624.png",
@@ -212,7 +210,6 @@
     "项目笔记：SaaS短链接/图片/Pasted image 20250722191612.png",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722175050.png",
     "项目笔记：SaaS短链接/图片/Pasted image 20250722174206.png",
-    "项目笔记：SaaS短链接/图片/Pasted image 20250722164457.png",
     "项目笔记：SaaS短链接/图片",
     "LeetCode/JAVA 语法速查.md",
     "Unity",
@@ -220,8 +217,6 @@
     "项目实战要求.md",
     "Fit5222/FIT Week 4B.md",
     "简历项目预备.md",
-    "Fit5222/FIT5222 Laboratory.md",
-    "Fit5222/FIT Week2B.md",
     "FIT5238/chapter15_Sparsity/utils/conf.json",
     "FIT5238/chapter15_Sparsity/utils",
     "FIT5238/chapter15_Sparsity/server.py",
