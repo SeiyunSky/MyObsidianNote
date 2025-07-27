@@ -234,6 +234,7 @@ public void destory(){
  1.定义一个方法获得要管理的对象
  2.添加@Bean，表示返回值是一个Bean
  @Bean
+ @Configuration(加这个就不需要第三步)
  public DataSource datasource(){
      DruidDataSource ds = new DuridDataSource();
 
@@ -248,3 +249,111 @@ public void destory(){
 
 **XML配置对比注解配置**
 ![[Pasted image 20250723094829.png]]
+## Spring整合Mybatis思路
+MyBatis 是一个​**​半自动化的持久层框架​**
+- ​**​ORM框架​**​：实现对象（Java Bean）与数据库表的映射（但不如Hibernate自动化程度高）
+- ​**​SQL可控​**​：开发者需手写SQL（灵活性高），框架负责将结果集映射为Java对象
+- ​**​轻量级​**​：无侵入性，仅需少量依赖（对比Spring Data JPA等更轻量）​
+
+![[Pasted image 20250726220430.png]]
+核心对象是Factory，下面的初始化部分是最重要的部分![[Pasted image 20250726223341.png]]
+
+#### **整合流程**
+```XML
+1、首先导入坐标
+Mybatis
+<dependency>
+<groupId>org.mybatis</groupId> 
+<artifactId>mybatis</artifactId>
+<version>3.5.6</version>
+</dependency> 
+
+Mysql包
+<dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId> <version>5.1.47</version> 
+</dependency>
+
+Spring中的数据库相关操作用包
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-jdbc</artifactId>
+  <version>5.2.10.RELEASE</version>
+</dependency>
+
+专为在Spring框架中集成MyBatis设计
+<dependency>
+  <groupId>org.mybatis</groupId>
+  <artifactId>mybatis-spring</artifactId>
+  <version>3.0.3</version>
+</dependency>
+```
+
+```JAVA
+开发使用Mybatis
+
+@Configuration
+@ComponentScan("包的路径")
+@PropertySource("第三方包")
+@Import({需要导入的配置,需要导入的配置文件})
+public class SpringConfig{
+
+}
+```
+
+```JAVA
+导入的MybatisConfig配置文件
+public class MybatisConfig{
+SqlSessionFactoryBean 这个类专门用来创建相关工厂对象
+    @Bean
+    public SqlSessionFactoryBean sqlSessionFactory(DataSource datasource){
+        SqlSessionFactoryBean ssfb = new SqlSessionFactoryBean（）
+       //可以set各个属性 ssfb.set()，但只需要设置最主要的部分
+        ssfb.setTypeAliasesPackage("放初始化别名")
+        ssfb.setDataSourse(datasource)
+        return null;
+    }
+
+    public MapperScannerConfigurer mapperScannerConfigurer(){
+    MapperScannerConfigurer= new MapperScannerConfigurer();
+    msc.setBasePackage("Mapper持久层的位置")
+    }
+}
+```
+![[Pasted image 20250726223341.png]]
+
+## 整合JUnit
+**JUnit​**​ 是 Java 最流行的​**​单元测试框架​**​，用于编写和运行可重复的自动化测试，确保代码质量。它是 ​**​xUnit​**​ 测试框架家族的一员，广泛应用于 Java 开发（尤其是 Spring Boot、Android 等）。
+```xml
+<dependency>
+  <groupId>junit</groupId>
+  <artifactId>junit</artifactId>
+  <version>4.12</version>
+  <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-test</artifactId>
+    <version>3.1.0</version>
+    <scope>test</scope>
+</dependency>
+```
+
+```JAVA
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = SpringConfig.class)
+public class AccountServiceTest {
+    // 测试代码...
+}
+```
+#### **`@RunWith(SpringJUnit4ClassRunner.class)`​**​
+​**​作用​**​：
+- 指定使用 ​**​Spring 的测试运行器​**​（而非JUnit默认运行器）
+- 实现Spring测试环境的自动初始化（如依赖注入、事务管理等）
+- **现代替代方案​​（Spring Boot）**
+```JAVA
+@SpringBootTest  // 自动检测配置 + 嵌入式环境支持
+public class MyTest { ... }
+```
+默认会扫描 `@SpringBootApplication` 注解的主类，并加载整个应用上下文（包括所有 `@Component`、`@Service`、`@Repository` 等）。
