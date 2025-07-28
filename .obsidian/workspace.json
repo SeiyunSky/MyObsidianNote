@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "96e27c0963d9b1b9",
+        "id": "45f1d3effca8b655",
         "type": "tabs",
         "children": [
           {
-            "id": "06bd16f2956480dc",
+            "id": "0c46e30b15972bb9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "项目笔记：SaaS短链接/短链接功能模块.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "短链接功能模块"
+              "title": "新标签页"
             }
           }
         ]
@@ -179,16 +175,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "0c46e30b15972bb9",
   "lastOpenFiles": [
-    "Redis",
+    "项目笔记：SaaS短链接/短链接功能模块.md",
+    "Java/JAVA基础/1、常用API.md",
+    "Java/JAVA基础/2、集合进阶.md",
+    "Pasted image 20250728201514.png",
+    "Java/JAVA基础",
     "项目笔记：SaaS短链接/用户模块.md",
+    "Pasted image 20250728164148.png",
+    "项目笔记：SaaS短链接/图片/Pasted image 20250728164124.png",
+    "Pasted image 20250728164106.png",
+    "Java/面经笔记.md",
+    "Java/SSM 笔记.md",
+    "Redis",
     "Java/知识碎片/Java并发与框架部分知识.md",
     "Java/知识碎片/IoC 和 APO.md",
     "Java/知识碎片/注解.md",
     "Java/知识碎片/设计原则.md",
     "Java/部分注解作用.md",
-    "Java/面经笔记.md",
     "MySQL/进阶篇/9、MySQL管理.md",
     "MySQL/进阶篇/8、InnoDB引擎.md",
     "MySQL/运维篇",
@@ -204,28 +209,18 @@
     "MySQL/基础篇/5、函数.md",
     "MySQL/基础篇/6、约束.md",
     "MySQL/基础篇/7、多表查询.md",
-    "Fit5222/Assignment1/Assignment 1.md",
     "Java/图片/Pasted image 20250727225520.png",
     "MySQL/进阶篇",
     "MySQL/基础篇/图片/Pasted image 20250728112336.png",
-    "Fit5222/FIT 5222 week 5.md",
-    "Fit5222/Fit5222 Week3.md",
-    "Fit5222/FIT5222 Laboratory.md",
     "Fit5222/图片/Pasted image 20250728104337.png",
     "Fit5222/图片/Pasted image 20250728104300.png",
     "Fit5222/图片/Pasted image 20250728101233.png",
     "Fit5222/图片/Pasted image 20250728101249.png",
-    "Fit5222/图片/Pasted image 20250728101242.png",
-    "Fit5222/图片/Pasted image 20250728101238.png",
-    "Fit5222/图片/Pasted image 20250728101227.png",
-    "Fit5222/图片/Pasted image 20250728101222.png",
     "Fit5222/Assignment1",
     "MySQL/基础篇",
     "MySQL/基础篇/图片",
     "MySQL",
     "Java/知识碎片",
-    "项目笔记：SaaS短链接/图片",
-    "Unity",
-    "项目笔记：SaaS短链接"
+    "项目笔记：SaaS短链接/图片"
   ]
 }
