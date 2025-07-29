@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -179,9 +180,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "0c46e30b15972bb9",
   "lastOpenFiles": [
-    "Pasted image 20250729153551.png",
+    "Java/图片/Pasted image 20250729153551.png",
     "Java/JAVA基础/1、常用API.md",
     "Java/JAVA基础/2、集合进阶.md",
     "Java/SSM 笔记.md",
