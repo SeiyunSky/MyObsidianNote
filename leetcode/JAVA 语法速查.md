@@ -62,6 +62,9 @@ Map.Entry<Integer, Integer> entry = list.get(i);
 map.entrySet().stream()
    .sorted(Map.Entry.comparingByValue())
    .collect(Collectors.toList());
+
+//获得所有的key
+map.keySet();
 ```
 
 ## **Java List 接口及实现类语法速查​**​
