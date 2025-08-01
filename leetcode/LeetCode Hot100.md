@@ -976,3 +976,99 @@ class Solution {
     }
 }
 ```
+
+## 二叉树的最近公共祖先
+![[Pasted image 20250801104256.png|400]]
+```JAVA
+通过左右中的后序遍历提供回溯数据
+class Solution {
+    TreeNode travalsal(TreeNode node,TreeNode q,TreeNode p){
+        if(node==null)
+            return null;
+        if(node==p||node==q)
+            return node;
+        TreeNode left =travalsal(node.left,q,p);
+        TreeNode right =travalsal(node.right,q,p);
+        if(left!=null && right!=null)
+            return node;
+        if(left==null && right!=null)
+            return right;
+        else if(left!=null && right==null)
+            return left;
+        return null;
+    }
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        return travalsal(root,p,q);
+    }
+}
+```
+
+## 路径总和III 
+![[Pasted image 20250801111552.png|400]]
+**双重递归**
+```Java
+class Solution {
+    public int pathSum(TreeNode root, int targetSum) {
+        if (root == null) return 0;
+        // 从根节点开始向下找或者从其他非根节点开始向下找
+        int result = pathSumStartWithRoot(root, targetSum) + pathSum(root.left, targetSum) + pathSum(root.right, targetSum);
+        return result;
+    }
+    private int pathSumStartWithRoot(TreeNode root, int targetSum) {
+        if (root == null) return 0;
+        // 以当前节点作为起始点让路径和先归0，重新开始向下找路径和是否与targetSum匹配
+        int result = 0;
+        if (root.val == targetSum) result++;
+        // 探索当前节点向下所有左右子树，targetSum与对应值做差，递归到二者相等记录找到一条路径，探底后马上收敛
+        result += pathSumStartWithRoot(root.left, targetSum - root.val) + pathSumStartWithRoot(root.right, targetSum - root.val);
+        return result;
+    }
+}
+```
+**哈希表前缀和方法**
+```java
+class Solution {
+    public int pathSum(TreeNode root, int targetSum) {
+        // 哈希表记录前缀和及其出现次数
+        Map<Long, Integer> prefixSumCount = new HashMap<>();
+        prefixSumCount.put(0L, 1); // 初始化：前缀和为0的路径出现1次（空路径）
+        return dfs(root, 0, targetSum, prefixSumCount);
+    }
+    private int dfs(TreeNode node, long currentSum, int targetSum, Map<Long, Integer> prefixSumCount) {
+        if (node == null) return 0;
+        currentSum += node.val; // 更新当前路径和
+        // 检查是否存在满足条件的前缀和
+        int res = prefixSumCount.getOrDefault(currentSum - targetSum, 0);
+        // 将当前前缀和存入哈希表
+        prefixSumCount.put(currentSum, prefixSumCount.getOrDefault(currentSum, 0) + 1);
+        // 递归处理左右子树
+        res += dfs(node.left, currentSum, targetSum, prefixSumCount);
+        res += dfs(node.right, currentSum, targetSum, prefixSumCount);
+        // 回溯：移除当前前缀和，避免影响其他分支
+        prefixSumCount.put(currentSum, prefixSumCount.get(currentSum) - 1);
+        return res;
+    }
+}
+```
+
+## 二叉树中的最大路径和
+![[Pasted image 20250801115204.png|400]]
+**思路是找寻当前根节点向下的子树最大贡献值**：
+```java
+class Solution {
+    int maxNum = Integer.MIN_VALUE;
+    public int maxPathSum(TreeNode root) {
+        search4Best(root);
+        return maxNum;
+    }
+    public int search4Best(TreeNode root){
+        if(root == null)
+            return 0;
+        int leftGain = Math.max(search4Best(root.left),0);
+        int rightGain = Math.max(search4Best(root.right),0);
+        int res = root.val+leftGain +rightGain;
+        maxNum = Math.max(maxNum,res);
+        return root.val + Math.max(leftGain, rightGain);
+    }
+}
+```
