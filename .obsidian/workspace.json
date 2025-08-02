@@ -20,42 +20,6 @@
               "icon": "lucide-file",
               "title": "短链接监控"
             }
-          },
-          {
-            "id": "2394e714ea5b86ae",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "LeetCode/图片/Pasted image 20250801111552.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250801111552"
-            }
-          },
-          {
-            "id": "8f9c5277b590441a",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "LeetCode/图片/Pasted image 20250801115204.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250801115204"
-            }
-          },
-          {
-            "id": "6287c00d55c78938",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "LeetCode/图片/Pasted image 20250801104256.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250801104256"
-            }
           }
         ]
       }
@@ -114,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
