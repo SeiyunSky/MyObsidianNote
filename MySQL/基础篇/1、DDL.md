@@ -2,10 +2,12 @@
 
 ```mysql
 查询所有数据库
-SHOW DATABASES()
+SHOW DATABASES();
+
+SHOW CREATE TABLE 表名;
 
 查询当前数据库
-SELECT DATABASE()
+SELECT DATABASE();
 
 创建数据库与表
 CREATE DATABASE 数据库名 [字符集] [COLLATE 排序规则]
