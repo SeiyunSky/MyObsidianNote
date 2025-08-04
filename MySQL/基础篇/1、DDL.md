@@ -27,6 +27,20 @@ CREATE TABLE tb_user(
     age INT COMMENT '年龄',
     gender VARCHAR(1) COMMENT '性别'
 ) COMMENT '用户表';
+
+CREATE TABLE `t_link_os_stats` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `full_short_url` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '完整短链接',
+  `gid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '短链接分组标识',
+  `date` date DEFAULT NULL,
+  `cnt` int DEFAULT NULL COMMENT '访问量',
+  `os` varchar(64) DEFAULT NULL COMMENT '操作系统',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `del_flag` tinyint(1) DEFAULT NULL COMMENT '删除标识',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_full_short_url_date_gid` (`full_short_url`,`gid`,`date`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 
 修改数据表中的字段
