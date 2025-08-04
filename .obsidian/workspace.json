@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -180,10 +179,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "056ed2e882ffa1f9",
   "lastOpenFiles": [
-    "Pasted image 20250804212553.png",
-    "Pasted image 20250804212546.png",
+    "MySQL/进阶篇/图片/Pasted image 20250804212553.png",
+    "MySQL/进阶篇/图片/Pasted image 20250804212546.png",
     "Java/JAVA基础/2、集合进阶.md",
     "MySQL/进阶篇/3、SQL优化.md",
     "MySQL/进阶篇/1、存储引擎.md",
