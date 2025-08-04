@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -179,7 +180,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "056ed2e882ffa1f9",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
     "MySQL/进阶篇/图片/Pasted image 20250804212553.png",
     "MySQL/进阶篇/图片/Pasted image 20250804212546.png",
