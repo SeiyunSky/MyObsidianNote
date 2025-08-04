@@ -7,7 +7,7 @@ from
 where
     条件列表
 group by
-    分组字段列表
+    分组字段列表（要包含select的全部字段）
 having
     分组后条件列表
 order by

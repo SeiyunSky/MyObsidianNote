@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MySQL/基础篇/1、DDL.md",
+                "file": "MySQL/基础篇/3、DQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1、DDL"
+              "title": "3、DQL"
             }
           }
         ]
@@ -179,10 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "056ed2e882ffa1f9",
   "lastOpenFiles": [
-    "MySQL/基础篇/3、DQL.md",
     "MySQL/基础篇/4、DCL.md",
+    "MySQL/基础篇/1、DDL.md",
+    "MySQL/基础篇/3、DQL.md",
     "MySQL/基础篇/2、DML.md",
     "Fit5222/FIT5222 Week6.md",
     "Fit5222/图片/Pasted image 20250804152914.png",
@@ -214,7 +215,6 @@
     "MySQL/进阶篇/9、MySQL管理.md",
     "MySQL/基础篇/8、事务.md",
     "MySQL/进阶篇/图片",
-    "MySQL/基础篇/1、DDL.md",
     "MySQL/基础篇/6、约束.md",
     "LeetCode/LeetCode Hot100.md",
     "FIT5201",
