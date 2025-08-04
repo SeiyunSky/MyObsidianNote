@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MySQL/基础篇/3、DQL.md",
+                "file": "MySQL/进阶篇/3、SQL优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3、DQL"
+              "title": "3、SQL优化"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -179,11 +180,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "056ed2e882ffa1f9",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "Pasted image 20250804212553.png",
+    "Pasted image 20250804212546.png",
+    "Java/JAVA基础/2、集合进阶.md",
+    "MySQL/进阶篇/3、SQL优化.md",
+    "MySQL/进阶篇/1、存储引擎.md",
+    "MySQL/进阶篇/2、索引.md",
+    "Unity/6、输入系统.md",
+    "Unity/5、Unity资源管理.md",
+    "Unity/4、导航系统.md",
+    "Unity/3、UI系统.md",
+    "Unity/1、Csharp设计模式专题.md",
+    "Unity/2、Unity组件思想.md",
+    "MySQL/基础篇/3、DQL.md",
     "MySQL/基础篇/4、DCL.md",
     "MySQL/基础篇/1、DDL.md",
-    "MySQL/基础篇/3、DQL.md",
     "MySQL/基础篇/2、DML.md",
     "Fit5222/FIT5222 Week6.md",
     "Fit5222/图片/Pasted image 20250804152914.png",
@@ -198,25 +211,14 @@
     "Java/知识碎片/IoC 和 APO.md",
     "Java/知识碎片/注解.md",
     "Java/知识碎片/设计原则.md",
-    "Java/JAVA基础/2、集合进阶.md",
     "Java/JAVA基础/1、常用API.md",
     "Java/面经笔记.md",
     "Java/部分注解作用.md",
     "Java/SSM 笔记.md",
-    "MySQL/进阶篇/2、索引.md",
-    "MySQL/进阶篇/3、SQL优化.md",
     "项目笔记：SaaS短链接/短链接监控.md",
     "MySQL/进阶篇/图片/Pasted image 20250803161059.png",
-    "MySQL/进阶篇/1、存储引擎.md",
     "MySQL/进阶篇/4、视图.md",
-    "MySQL/基础篇/5、函数.md",
-    "MySQL/进阶篇/图片/Pasted image 20250803145430.png",
-    "MySQL/进阶篇/8、InnoDB引擎.md",
-    "MySQL/进阶篇/9、MySQL管理.md",
-    "MySQL/基础篇/8、事务.md",
     "MySQL/进阶篇/图片",
-    "MySQL/基础篇/6、约束.md",
-    "LeetCode/LeetCode Hot100.md",
     "FIT5201",
     "Java/JAVA基础",
     "Redis",
