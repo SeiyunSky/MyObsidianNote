@@ -158,6 +158,3 @@ list.stream().filter(s->Integer.parseInt(s.split(",")[1]>=24)).collect(Collector
 ));
 ```
 ![[Pasted image 20250805103034.png]]
-```java
-
-```
