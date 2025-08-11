@@ -93,7 +93,7 @@ while ((ch = fis.read()) != -1) {
     fos.write(ch);  // 单字节写入
 }
 ```
-# **字符流**：
+# **字符流**
 #### FileReader
 底层逻辑是 **字节流+字符集**
 ```plaintext
@@ -162,8 +162,172 @@ flush();
 读取或写出纯文本
 
 
+## 练习
+## 文件加密
+![[Pasted image 20250811111453.png|500]]
+```java
+^利用异或实现加密解密
+//创建对象关联文件
+FileInputStream fis = new FileInputStream("文件地址");
+FileOutputStream fos = new FileOutputStream("文件地址");
+//加密处理与资源释放
+int b;
+while(b = fis.read()!=-1)
+{
+    fos.write(b^ 加密因子);
+}
+fos.close();
+fis.close();
+```
+
+## **修改文件中数据**
+![[Pasted image 20250811112131.png|400]]
+```java
+//也就是取出并进行排序
+StringBuilder sb = new StringBuilder();
+FileInputStream raw = new FileInputStream("文件");
+int b;
+while(b = raw.read()!=-1){
+    sb.append((char)b);
+}
+raw.close();
+
+String str = sb.toString();
+String[] arrstr = str.split("-");
+List<Integer> i = Arrayz.stream(arrstr).map(Integer::parseInt).collect(Collectors.toList);
+Collections.sort(i);
 
 
+FileOutputStream fresh = new FileOutputStream("文件");
+String result = i.stream().map(String::valueOf).collect(Collectors.joining("-"));
+fresh.write(result.getBytes());
+fresh.close();
 
 
+//更简单一点
+Integer[] arr = Arrays.stream(sb.toString)
+    .split("-")
+    .map(Integer::parseInt)
+    .sorted()
+    .toArray(Integer[]::new);    
+```
+
+# **缓冲流**
+![[Pasted image 20250811115128.png]]
+
+#### BufferedInputStream  |  BufferedOutputStream
+底层自带了长度8192的缓冲区用来提高性能
+
+```java
+利用字节缓冲流拷贝文件
+BufferedInputStream bis = new BufferedInputStream(new FileInputStream(文件名，【手动设置缓冲区大小】));
+BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(文件名，【手动设置缓冲区大小】));
+
+直接读取并关闭bos就可以了，文件包含关闭基本流的代码。
+
+//2.拷贝(一次读写多个字节)
+byte[] bytes = new byte[1024];
+int len;
+while((len = bis.read(bytes)) != -1){
+    bos.write(bytes, 0, len);
+}
+
+```
+
+#### BufferedReader  |  BufferedWriter
+底层自带了长度8192的缓冲区用来提高性能
+```java 
+特有方法
+- 入
+readLine() 读取一行数据或返回null
+
+- 出
+newLine() 换行
+举例：
+bw.write("你嘴角上扬的样子，百度搜索不到");
+bw.newLine();
+bw.write("以后如果我结婚了，你一定要来哦，没有新娘我会很尴尬");
+bw.newLine();
+```
+
+### 练习
+```java 
+修改文本顺序
+//重写排序方法
+- BufferedReader br = new BufferedReader(new FileReader(文件名));
+ArrayList<String> list = new ArrayList<>();
+while((line = br.readLine())!=null){
+list.add(line);
+}
+br.close();
+Collections.sort(list,new Comparator<String>(){
+    @Override
+    public int compare(String o1,String o2){
+        return  Integer.parseInt(o1.split("\\.")[0])-Integer.parseInt(o2.split("\\.")[0]);
+    }
+})
+BufferedWritter bw = new BufferedWriter(new FileWriter(文件名));
+for(String str:list){
+bw.write(str);
+bw.newLine();
+}
+bw.close();
+//利用TreeMap
+BufferedReader br = new BufferedReader(new FileReader("myio\\csb.txt"));
+String line;
+TreeMap<Integer,String> tm = new TreeMap<>();
+while((line = br.readLine())!= null){
+    String[] arr = line.split("\\.");
+    //0:序号 1:内容
+    tm.put(Integer.parseInt(arr[0]),arr[1]);
+}
+br.close();
+```
+
+
+### 转换流
+```java
+**场景问题​**​
+你有一个字节流（比如从网络收到的数据），但想按​**​文本行​**​读取（字符流操作）：
+// 错误！字节流不能直接当字符流用
+FileInputStream fis = new FileInputStream("a.txt");
+fis.readLine(); // 报错！没有这个方法
+
+// 字节流 → 字符流 → 缓冲流
+BufferedReader br = new BufferedReader(
+    new InputStreamReader(
+        new FileInputStream("a.txt"), "UTF-8" // 指定编码
+    )
+);
+String line = br.readLine(); // 成功读取文本行！
+```
+### 序列化流
+```java
+// 1. 必须实现 Serializable 接口（空接口，仅作标记）
+class Cat implements Serializable {
+    private String name;
+    private transient int age; // transient 字段不序列化
+}
+transient ​：标记的字段不会被序列化
+
+// 2. 序列化（对象 → 文件）
+try (ObjectOutputStream oos = new ObjectOutputStream(
+        new FileOutputStream("cat.ser"))) {
+    oos.writeObject(new Cat("橘座", 3)); // 写入对象
+}
+
+// 3. 反序列化（文件 → 对象）
+try (ObjectInputStream ois = new ObjectInputStream(
+        new FileInputStream("cat.ser"))) {
+    Cat cat = (Cat) ois.readObject(); // 强制类型转换
+
+```
+ - 使用序列化流将对象写到文件时，需要让Javabean类实现`Serializable`接口，否则会出现`NotSerializableException`异常。
+ - 序列化流写到文件中的数据是不能修改的，一旦修改就无法再次读回来了。
+ - 序列化对象后，修改了Javabean类，再次反序列化，会出问题，会抛出`InvalidClassException`异常。
+ 
+    若类未显式声明`serialVersionUID`，Java会根据类结构（字段名/类型/方法等）自动生成一个哈希值作为版本号。→ ​**​任何类结构变更都会导致自动生成的版本号改变​**​。
+```java
+private static final long serialVersionUID = 1L; // 手动固定版本号
+```
 

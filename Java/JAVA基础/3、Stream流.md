@@ -56,7 +56,7 @@ public class ObjectFilterExample {
     }
 }
 ```
-**Map用法——数据转换**
+**Map用法——数据转换|对象属性提取**
 ```java
 // 将字符串转换为大写
 List<String> upperCaseNames2 = names.stream() 
@@ -73,15 +73,21 @@ List<Integer> squares = numbers.stream()
 List<String> names = people.stream() 
 .map(Person::getName) // 方法引用 
 .collect(Collectors.toList());
+
+//对象属性提取|嵌套属性访问
+List<User> users = getUserList();
+List<String> names = users.stream()
+                         .map(User::getName) // 方法引用
+                         .collect(Collectors.toList());
 ```
 
 ## Stream流终结方法
-| 方法名称                            | 说明         | 备注           |
-| ------------------------------- | ---------- | ------------ |
-| `void forEach(Consumer action)` | 遍历流中的每个元素  | 无返回值         |
-| `long count()`                  | 统计流中元素的数量  | 返回 `long`类型  |
-| `toArray()`                     | 将流数据收集到数组中 | ​**​重点方法​**​ |
-| `collect(Collector collector)`  | 将流数据收集到集合中 | ​**​重点方法     |
+| 方法名称                            | 说明         |
+| ------------------------------- | ---------- |
+| `void forEach(Consumer action)` | 遍历流中的每个元素  |
+| `long count()`                  | 统计流中元素的数量  |
+| `toArray()`                     | 将流数据收集到数组中 |
+| `collect(Collector collector)`  | 将流数据收集到集合中 |
 **匹配检查方法**
 
 | 方法                     | 说明           | 示例                                        |
