@@ -302,6 +302,18 @@ BufferedReader br = new BufferedReader(
 String line = br.readLine(); // 成功读取文本行！
 ```
 ### 序列化流
+
+| **​**​**​**​**序列化​**​    | `ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("file.ser"));` | 创建对象输出流       |
+| ------------------------ | ------------------------------------------------------------------------------------ | ------------- |
+|                          | `oos.writeObject(objectToSerialize);`                                                | 将对象写入输出流      |
+|                          | `oos.close();`                                                                       | 关闭输出流         |
+| ​**​反序列化​**​             | `ObjectInputStream ois = new ObjectInputStream(new FileInputStream("file.ser"));`    | 创建对象输入流       |
+|                          | `MyClass obj = (MyClass) ois.readObject();`                                          | 从输入流读取对象并转换类型 |
+|                          | `ois.close();`                                                                       | 关闭输入流         |
+| ​**​实现序列化​**​            | `public class MyClass implements Serializable { ... }`                               | 使类可序列化        |
+| ​**​transient字段​**​      | `private transient String tempData;`                                                 | 标记不参与序列化的字段   |
+| ​**​serialVersionUID​**​ | `private static final long serialVersionUID = 1L;`                                   | 显式声明序列化版本号    |
+
 ```java
 // 1. 必须实现 Serializable 接口（空接口，仅作标记）
 class Cat implements Serializable {
@@ -329,5 +341,128 @@ try (ObjectInputStream ois = new ObjectInputStream(
     若类未显式声明`serialVersionUID`，Java会根据类结构（字段名/类型/方法等）自动生成一个哈希值作为版本号。→ ​**​任何类结构变更都会导致自动生成的版本号改变​**​。
 ```java
 private static final long serialVersionUID = 1L; // 手动固定版本号
+```
+
+### **字节打印流**
+| 构造方法                                                   | 说明                               |
+| ------------------------------------------------------ | -------------------------------- |
+| `public PrintStream(OutputStream/File/String)`         | 关联字节输出流/文件/文件路径                  |
+| `public PrintStream(String fileName, Charset charset)` | 指定字符编码                           |
+| 成员方法                                                   | 说明                               |
+| `public void write(int b)`                             | ​**​常规方法​**​：将指定的字节写出            |
+| `public void println(XXX xx)`                          | ​**​特有方法​**​：打印任意类型数据，自动刷新缓冲区并换行 |
+| `public void print(XXX xx)`                            | ​**​特有方法​**​：打印任意类型数据，不换行        |
+| `public void printf(String format, Object... args)`    | ​**​特有方法​**​：格式化输出（支持占位符），不自动换行  |
+### 字符打印流
+```java
+PrintWriter pw = new PrintWriter(new FileWriter(文件名称)，true)
+```
+
+### 解压缩流/压缩流
+**解压缩流**
+```java
+File src = new File("文件地址");
+File dest = new File("解压目的地")
+
+publick static void(File src,File dest){
+
+    //创建一个解压缩流用来读取压缩包中的数据
+    ZipInputStream zip = new ZipInputStream(new FileInputStream(src));
+    
+    //先获取每一个zipentry
+    ZipEntry entry 
+    while((entry= zip.getNextEntry())!=null){
+    
+        if(entry.isDirectory()){
+        //文件夹就在目的地创建同样文件夹
+        File file = new File(dest,entry.toString());
+        file.mkdirs();
+        
+        }else{
+        FileOutputStream fos =new FileOutputStream(new File(dest,entry.toString()));
+        //文件，读取压缩包的文件放入对应的目的地址
+        int b;
+        while((b=zip.read())!=-1){
+        //写入目的地
+        fos.write(b);
+        }
+        fos.close();
+        //表示压缩包中的一个文件处理完毕了
+        zip.closeEntry());
+        }
+    }
+}
+```
+
+**压缩流**
+单个文件
+```java
+File src = new File("文件地址");
+File dest = new File("压缩目的地")
+
+public static void toZip(File src,File dest){
+//首先创建压缩流，关联压缩包
+ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(new File(dest,"a.zip"));
+
+ZipEntry entry = new ZipEntry("a.txt");
+//放入压缩包中
+zos.putNextEntry(entry);
+
+//写入对应的数据
+FileInputStream fis = new FileInputStream(src);
+int b;
+while((b = fis.read())!=-1){
+    zos.write(b);
+}
+
+zos.closeEntry();
+zos.close();
+}
+```
+整个文件夹
+```java
+import java.io.*;
+import java.nio.file.*;
+import java.util.zip.*;
+public class FolderZipper {
+    public static void zipFolder(String sourceFolderPath, String zipFilePath) throws IOException {
+        // 创建输出流
+        try (ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(zipFilePath))) {
+            // 获取源文件夹路径
+            Path sourcePath = Paths.get(sourceFolderPath);
+            // 遍历文件夹
+            Files.walk(sourcePath)
+                .filter(path -> !Files.isDirectory(path)) // 排除目录本身
+                .forEach(path -> {
+                    // 获取相对路径
+                    String relativePath = sourcePath.relativize(path).toString(); 
+                    // 替换Windows路径分隔符为Unix风格
+                    relativePath = relativePath.replace(File.separator, "/");  
+                    try {
+                        // 创建ZipEntry
+                        ZipEntry zipEntry = new ZipEntry(relativePath);
+                        zos.putNextEntry(zipEntry);    
+                        // 写入文件内容
+                        Files.copy(path, zos);
+                        zos.closeEntry();
+                    } catch (IOException e) {
+                        System.err.println("处理文件出错: " + path);
+                        e.printStackTrace();
+                    }
+                });
+        }
+    }
+    public static void main(String[] args) {
+        String sourceFolder = "C:/path/to/your/folder"; // 要压缩的文件夹路径
+        String zipFile = "C:/path/to/output.zip";      // 输出的zip文件路径
+        try {
+            zipFolder(sourceFolder, zipFile);
+            System.out.println("文件夹压缩完成: " + zipFile);
+        } catch (IOException e) {
+            System.err.println("压缩过程中出错:");
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
