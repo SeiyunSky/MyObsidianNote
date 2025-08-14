@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端开发学习/JVM/1、基础篇/基础知识.md",
+                "file": "后端开发学习/JVM/1、内存与垃圾回收/基础知识.md",
                 "mode": "source",
                 "source": false
               },
@@ -179,20 +179,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6409b921e11a7585",
+  "active": "65ef5e3f6999041c",
   "lastOpenFiles": [
     "后端开发学习",
     "课程作业",
     "后端开发学习/JVM/图片/Pasted image 20250814155333.png",
     "JVM/4、原理篇.md",
-    "后端开发学习/JVM/1、基础篇/基础知识.md",
+    "后端开发学习/JVM/1、内存与垃圾回收/基础知识.md",
     "后端开发学习/JVM/4、原理篇",
-    "后端开发学习/JVM/3、高级篇",
-    "后端开发学习/JVM/2、实战篇",
+    "后端开发学习/JVM/3、性能监控与调优",
+    "后端开发学习/JVM/2、字节码与类的加载",
     "JVM/2、实战篇.md",
     "JVM/3、高级篇.md",
     "后端开发学习/JAVA/知识碎片/部分注解作用.md",
-    "后端开发学习/JVM/1、基础篇",
+    "后端开发学习/JVM/1、内存与垃圾回收",
     "后端开发学习/JVM/图片",
     "后端开发学习/JAVA/知识碎片/SSM 笔记.md",
     "后端开发学习/JAVA/知识碎片/面经笔记.md",
