@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -183,6 +184,11 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "Pasted image 20250818152958.png",
+    "后端开发学习/MyBatis-Plus/图片/Pasted image 20250818152259.png",
+    "后端开发学习/MyBatis-Plus/图片/Pasted image 20250818151812.png",
+    "后端开发学习/MyBatis-Plus/图片",
+    "后端开发学习/MyBatis-Plus/图片/Pasted image 20250818145217.png",
     "后端开发学习/MyBatis-Plus/插件功能.md",
     "后端开发学习/MyBatis-Plus/拓展功能.md",
     "后端开发学习/MyBatis-Plus/核心功能.md",
@@ -195,12 +201,9 @@
     "课程作业/Fit5222/图片/Pasted image 20250818133012.png",
     "课程作业/Fit5222/图片/Pasted image 20250818133002.png",
     "课程作业/Fit5222/图片/Pasted image 20250818132955.png",
-    "课程作业/Fit5222/图片/Pasted image 20250818132946.png",
-    "课程作业/Fit5222/图片/Pasted image 20250818132939.png",
     "推荐算法学习.md",
     "code_35851147_total6 (4).md",
     "local_evaluation.md",
-    "output_13_1.png",
     "后端开发学习/MySQL/基础篇/7、多表查询.md",
     "后端开发学习/MySQL/基础篇/3、DQL.md",
     "后端开发学习/MySQL/基础篇/1、DDL.md",
@@ -219,7 +222,6 @@
     "项目笔记：SaaS短链接/微服务改造.md",
     "项目笔记：SaaS短链接/消息队列相关.md",
     "后端开发学习/JVM/2、字节码与类的加载/类的生命周期.md",
-    "后端开发学习/JVM/2、字节码与类的加载/字节码.md",
     "未命名.canvas",
     "后端开发学习",
     "课程作业",
@@ -228,7 +230,6 @@
     "后端开发学习/JVM/2、字节码与类的加载",
     "后端开发学习/JVM/1、内存与垃圾回收",
     "后端开发学习/JVM/图片",
-    "后端开发学习/JVM",
-    "后端开发学习/JAVA/JAVA基础/code_35851147_base1.ipynb"
+    "后端开发学习/JVM"
   ]
 }
