@@ -4,24 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "41f09b342987557f",
+        "id": "1ddd75eaa701e79e",
         "type": "tabs",
         "children": [
           {
-            "id": "9763fffdc7cc6210",
+            "id": "e55aafa26df0320e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "2025-08-19.md",
-                "mode": "source",
-                "source": false
+                "file": "后端开发学习/JVM——未完成/图片/Pasted image 20250820220851.png"
               },
-              "icon": "lucide-file",
-              "title": "2025-08-19"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250820220851"
+            }
+          },
+          {
+            "id": "b51daff0421f50b1",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
+                "bFile": "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: 类加载器"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -182,34 +195,38 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "9763fffdc7cc6210",
+  "active": "b51daff0421f50b1",
   "lastOpenFiles": [
+    "后端开发学习/JVM——未完成/1、内存与垃圾回收/运行时数据区.md",
+    "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820234526.png",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820234036.png",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820233947.png",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820232646.png",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820231254.png",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820231236.png",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820222201.png",
+    "后端开发学习/JVM——未完成/2、字节码与类的加载/类的生命周期.md",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820221047.png",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820220851.png",
+    "后端开发学习/JVM——未完成/图片/Pasted image 20250820220210.png",
+    "后端开发学习/JVM——未完成/2、字节码与类的加载/字节码.md",
+    "2025-08-19.md",
     "后端开发学习/Docker/4、容器转镜像.md",
     "后端开发学习/Docker/3、数据卷配置.md",
     "后端开发学习/Docker/2、Docker命令.md",
     "后端开发学习/Docker/1、基本内容.md",
     "后端开发学习/Docker/4、Docker应用部署.md",
-    "后端开发学习/Docker/图片/Pasted image 20250820192139.png",
     "后端开发学习/Docker/图片",
     "后端开发学习/RocketMQ/10、高级特性.md",
-    "后端开发学习/RocketMQ/图片/Pasted image 20250820182217.png",
-    "Pasted image 20250820182016.png",
-    "后端开发学习/RocketMQ/图片/Pasted image 20250820181342.png",
-    "后端开发学习/RocketMQ/图片/Pasted image 20250820180517.png",
     "后端开发学习/RocketMQ/9、集群相关.md",
-    "后端开发学习/RocketMQ/图片/Pasted image 20250820175508.png",
-    "后端开发学习/RocketMQ/图片/Pasted image 20250820175319.png",
-    "后端开发学习/RocketMQ/图片/Pasted image 20250820175025.png",
-    "后端开发学习/RocketMQ/图片/Pasted image 20250820174747.png",
     "后端开发学习/RocketMQ/8、事务消息.md",
-    "后端开发学习/RocketMQ/图片/Pasted image 20250820171116.png",
     "后端开发学习/RocketMQ/7、顺序消息.md",
     "后端开发学习/RocketMQ/6、Springboot整合.md",
     "后端开发学习/RocketMQ/2、简单消息.md",
     "后端开发学习/RocketMQ/3、多生产多消费.md",
     "后端开发学习/RocketMQ/5、tag过滤和sql过滤.md",
     "后端开发学习/RocketMQ/4、异步消息与其他消息.md",
-    "2025-08-19.md",
     "后端开发学习/Docker",
     "后端开发学习/未命名.md",
     "后端开发学习/Linux",
@@ -218,11 +235,6 @@
     "后端开发学习/RocketMQ/1、MQ基础.md",
     "后端开发学习/Redis——未完成/RedisStream实现消息队列.md",
     "后端开发学习/JAVA/知识碎片/面经笔记.md",
-    "项目笔记：SaaS短链接/消息队列相关.md",
-    "项目笔记：SaaS短链接/用户模块.md",
-    "后端开发学习/MyBatis-Plus/核心功能.md",
-    "后端开发学习/MyBatis-Plus/拓展功能.md",
-    "后端开发学习/MyBatis-Plus/插件功能.md",
     "后端开发学习/RocketMQ/图片",
     "后端开发学习/RocketMQ",
     "后端开发学习/MyBatis-Plus/图片",
