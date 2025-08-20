@@ -1,3 +1,12 @@
+**引入依赖**
+```XML
+<dependency>
+    <groupId>org.apache.rocketmq</groupId>
+    <artifactId>rocketmq-spring-boot-starter</artifactId>
+    <version>2.2.3</version>
+</dependency>
+```
+**进行配置**
 ```yml
 rocketmq:
     name-server: localhost:9876
