@@ -4,37 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "1ddd75eaa701e79e",
+        "id": "d6ad45ca20c04b4f",
         "type": "tabs",
         "children": [
           {
-            "id": "e55aafa26df0320e",
+            "id": "5a06290e8922715d",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "后端开发学习/JVM——未完成/图片/Pasted image 20250820220851.png"
+                "file": "项目笔记：牛券Coupon/业务架构.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250820220851"
-            }
-          },
-          {
-            "id": "b51daff0421f50b1",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
-                "bFile": "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: 类加载器"
+              "icon": "lucide-file",
+              "title": "业务架构"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,22 +182,28 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "b51daff0421f50b1",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "项目笔记：牛券Coupon/图片/Pasted image 20250821165100.png",
+    "项目笔记：牛券Coupon/图片/Pasted image 20250821165026.png",
+    "项目笔记：牛券Coupon/图片/Pasted image 20250821163850.png",
+    "项目笔记：牛券Coupon/图片",
+    "项目笔记：牛券Coupon/图片/Pasted image 20250821163822.png",
+    "未命名.md",
+    "项目笔记：牛券Coupon/业务架构.md",
+    "项目笔记：牛券Coupon",
+    "课程作业/Fit5222/Assignment2.md",
+    "课程作业/Fit5222/图片/Pasted image 20250821162323.png",
+    "课程作业/Fit5222/图片/Pasted image 20250821162424.png",
+    "课程作业/Fit5222/图片/Pasted image 20250821162415.png",
+    "课程作业/Fit5222/图片/Pasted image 20250821162408.png",
+    "课程作业/Fit5222/图片/Pasted image 20250821162403.png",
+    "课程作业/Fit5222/图片/Pasted image 20250821162357.png",
+    "课程作业/Fit5222/图片/Pasted image 20250821162349.png",
     "后端开发学习/JVM——未完成/1、内存与垃圾回收/运行时数据区.md",
-    "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820234526.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820234036.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820233947.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820232646.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820231254.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820231236.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820222201.png",
-    "后端开发学习/JVM——未完成/2、字节码与类的加载/类的生命周期.md",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820221047.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820220851.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250820220210.png",
     "后端开发学习/JVM——未完成/2、字节码与类的加载/字节码.md",
+    "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
+    "后端开发学习/JVM——未完成/2、字节码与类的加载/类的生命周期.md",
     "2025-08-19.md",
     "后端开发学习/Docker/4、容器转镜像.md",
     "后端开发学习/Docker/3、数据卷配置.md",
@@ -232,16 +225,11 @@
     "后端开发学习/Linux",
     "后端开发学习/Docker.md",
     "后端开发学习/Linux.md",
-    "后端开发学习/RocketMQ/1、MQ基础.md",
-    "后端开发学习/Redis——未完成/RedisStream实现消息队列.md",
-    "后端开发学习/JAVA/知识碎片/面经笔记.md",
     "后端开发学习/RocketMQ/图片",
     "后端开发学习/RocketMQ",
     "后端开发学习/MyBatis-Plus/图片",
     "后端开发学习/MyBatis-Plus",
     "未命名.canvas",
-    "后端开发学习",
-    "课程作业",
-    "后端开发学习/JVM/4、原理篇"
+    "后端开发学习"
   ]
 }
