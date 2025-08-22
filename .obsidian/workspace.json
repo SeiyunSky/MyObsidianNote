@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "项目笔记：牛券Coupon/业务架构.md",
+                "file": "后端开发学习/MySQL——运维未完成/基础篇/8、事务.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "业务架构"
+              "title": "8、事务"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Base Knoledge/SSM 笔记.md",
+                "file": "项目笔记：牛券Coupon/业务架构.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "SSM 笔记 的出链列表"
+              "title": "业务架构 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Base Knoledge/SSM 笔记.md",
+                "file": "项目笔记：牛券Coupon/业务架构.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "SSM 笔记 的大纲"
+              "title": "业务架构 的大纲"
             }
           },
           {
@@ -184,22 +184,39 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "后端开发学习/MySQL——运维未完成/进阶篇/3、SQL优化.md",
+    "项目笔记：SaaS短链接/线程池.md",
+    "后端开发学习/JAVA/JAVA基础/8.3 线程池.md",
+    "后端开发学习/JAVA/JAVA基础/8.2 阻塞队列.md",
+    "后端开发学习/JAVA/JAVA基础/9、网络编程.md",
+    "后端开发学习/面经笔记/面经笔记.md",
+    "后端开发学习/JAVA/JAVA基础/8、多线程.md",
+    "后端开发学习/JAVA/JAVA基础/8.1 锁.md",
+    "后端开发学习/面经笔记/图片/Pasted image 20250822211549.png",
+    "后端开发学习/MySQL——运维未完成/进阶篇/图片/Pasted image 20250822194111.png",
+    "后端开发学习/MySQL——运维未完成/基础篇/8、事务.md",
+    "后端开发学习/MySQL——运维未完成/进阶篇/图片/Pasted image 20250822211356.png",
+    "后端开发学习/MySQL——运维未完成/进阶篇/图片/Pasted image 20250822211353.png",
+    "后端开发学习/MySQL——运维未完成/进阶篇/1、存储引擎.md",
+    "后端开发学习/MySQL——运维未完成/进阶篇/4、视图.md",
+    "后端开发学习/MySQL——运维未完成/进阶篇/5、存储过程.md",
+    "后端开发学习/MySQL——运维未完成/进阶篇/6、触发器.md",
+    "后端开发学习/MySQL——运维未完成/进阶篇/2、索引.md",
+    "后端开发学习/MySQL——运维未完成/进阶篇/图片/Pasted image 20250822194207.png",
+    "后端开发学习/面经笔记/图片/Pasted image 20250822180851.png",
+    "后端开发学习/面经笔记/图片/Pasted image 20250822180843.png",
+    "后端开发学习/面经笔记",
+    "后端开发学习/面经笔记/图片",
+    "后端开发学习/面经笔记/图片/Pasted image 20250822175931.png",
+    "项目笔记：牛券Coupon/责任链实现.md",
+    "后端开发学习/MyBatis-Plus/拓展功能.md",
+    "项目笔记：牛券Coupon/业务架构.md",
     "项目笔记：牛券Coupon/图片/Pasted image 20250821165100.png",
     "项目笔记：牛券Coupon/图片/Pasted image 20250821165026.png",
-    "项目笔记：牛券Coupon/图片/Pasted image 20250821163850.png",
     "项目笔记：牛券Coupon/图片",
-    "项目笔记：牛券Coupon/图片/Pasted image 20250821163822.png",
     "未命名.md",
-    "项目笔记：牛券Coupon/业务架构.md",
     "项目笔记：牛券Coupon",
     "课程作业/Fit5222/Assignment2.md",
-    "课程作业/Fit5222/图片/Pasted image 20250821162323.png",
-    "课程作业/Fit5222/图片/Pasted image 20250821162424.png",
-    "课程作业/Fit5222/图片/Pasted image 20250821162415.png",
-    "课程作业/Fit5222/图片/Pasted image 20250821162408.png",
-    "课程作业/Fit5222/图片/Pasted image 20250821162403.png",
-    "课程作业/Fit5222/图片/Pasted image 20250821162357.png",
-    "课程作业/Fit5222/图片/Pasted image 20250821162349.png",
     "后端开发学习/JVM——未完成/1、内存与垃圾回收/运行时数据区.md",
     "后端开发学习/JVM——未完成/2、字节码与类的加载/字节码.md",
     "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
@@ -207,29 +224,12 @@
     "2025-08-19.md",
     "后端开发学习/Docker/4、容器转镜像.md",
     "后端开发学习/Docker/3、数据卷配置.md",
-    "后端开发学习/Docker/2、Docker命令.md",
-    "后端开发学习/Docker/1、基本内容.md",
-    "后端开发学习/Docker/4、Docker应用部署.md",
     "后端开发学习/Docker/图片",
-    "后端开发学习/RocketMQ/10、高级特性.md",
-    "后端开发学习/RocketMQ/9、集群相关.md",
-    "后端开发学习/RocketMQ/8、事务消息.md",
-    "后端开发学习/RocketMQ/7、顺序消息.md",
-    "后端开发学习/RocketMQ/6、Springboot整合.md",
-    "后端开发学习/RocketMQ/2、简单消息.md",
-    "后端开发学习/RocketMQ/3、多生产多消费.md",
-    "后端开发学习/RocketMQ/5、tag过滤和sql过滤.md",
-    "后端开发学习/RocketMQ/4、异步消息与其他消息.md",
     "后端开发学习/Docker",
-    "后端开发学习/未命名.md",
     "后端开发学习/Linux",
-    "后端开发学习/Docker.md",
-    "后端开发学习/Linux.md",
     "后端开发学习/RocketMQ/图片",
     "后端开发学习/RocketMQ",
     "后端开发学习/MyBatis-Plus/图片",
-    "后端开发学习/MyBatis-Plus",
-    "未命名.canvas",
-    "后端开发学习"
+    "未命名.canvas"
   ]
 }
