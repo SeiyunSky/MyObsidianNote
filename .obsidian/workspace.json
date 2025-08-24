@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "142708855044c1a4",
+        "id": "e9a7ac5a7c091964",
         "type": "tabs",
         "children": [
           {
-            "id": "e13731ebdf6d9547",
+            "id": "23425c8df98551ff",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "后端开发学习/JVM——未完成/图片/Pasted image 20250823223849.png"
+                "file": "后端开发学习/JVM——运维相关要学/1、内存与垃圾回收/对象引用.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250823223849"
+              "icon": "lucide-file",
+              "title": "对象引用"
             }
           }
         ]
@@ -51,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"Fit5222/\" ",
+                "query": "line:(Applica)",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.5
+    "width": 267.5
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -182,51 +184,52 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
-    "后端开发学习/JVM——未完成/1、内存与垃圾回收/GC垃圾回收.md",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823233007.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823232744.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823231750.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823231642.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823231552.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823230839.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823230817.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823224407.png",
-    "后端开发学习/JVM——未完成/1、内存与垃圾回收/对象引用.md",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823224008.png",
-    "后端开发学习/JVM——未完成/图片/Pasted image 20250823223918.png",
-    "后端开发学习/JVM——未完成/1、内存与垃圾回收/堆 方法区.md",
-    "后端开发学习/JVM——未完成/2、字节码与类的加载/类加载器.md",
-    "后端开发学习/JVM——未完成/2、字节码与类的加载/类的生命周期.md",
-    "后端开发学习/JVM——未完成/1、内存与垃圾回收/栈.md",
-    "后端开发学习/JVM——未完成/2、字节码与类的加载/字节码.md",
-    "后端开发学习/Redis——未完成/RedisStream实现消息队列.md",
-    "后端开发学习/MyBatis-Plus/拓展功能.md",
-    "后端开发学习/MyBatis-Plus/核心功能.md",
-    "后端开发学习/MyBatis-Plus/插件功能.md",
-    "后端开发学习/Docker/4、容器转镜像.md",
-    "后端开发学习/Docker/3、数据卷配置.md",
-    "后端开发学习/Docker/2、Docker命令.md",
-    "后端开发学习/Docker/1、基本内容.md",
-    "后端开发学习/Linux/Linux命令.md",
-    "后端开发学习/JAVA/JAVA基础/9、网络编程.md",
-    "后端开发学习/JAVA/知识碎片/部分注解作用.md",
-    "后端开发学习/JAVA/知识碎片/设计原则.md",
-    "后端开发学习/JAVA/知识碎片/注解.md",
-    "未命名 1.base",
-    "未命名.base",
     "后端开发学习/RocketMQ/10、高级特性.md",
     "后端开发学习/RocketMQ/9、集群相关.md",
     "后端开发学习/RocketMQ/8、事务消息.md",
     "后端开发学习/RocketMQ/7、顺序消息.md",
     "后端开发学习/RocketMQ/6、Springboot整合.md",
+    "后端开发学习/RocketMQ/5、tag过滤和sql过滤.md",
+    "后端开发学习/RocketMQ/3、多生产多消费.md",
+    "后端开发学习/RocketMQ/1、MQ基础.md",
+    "后端开发学习/RocketMQ/2、简单消息.md",
+    "后端开发学习/Redis——未完成/RedisStream实现消息队列.md",
+    "后端开发学习/JAVA/JAVA基础/2、集合进阶.md",
+    "后端开发学习/JAVA/JAVA基础/1、常用API.md",
+    "后端开发学习/JVM——运维相关要学/1、内存与垃圾回收/GC垃圾回收.md",
+    "后端开发学习/JVM——运维相关要学/1、内存与垃圾回收/堆 方法区.md",
+    "后端开发学习/JVM——运维相关要学/1、内存与垃圾回收/栈.md",
+    "后端开发学习/JAVA/JAVA基础/8.3 线程池.md",
+    "后端开发学习/JAVA/JAVA基础/9、网络编程.md",
+    "后端开发学习/JAVA/JAVA基础/10、反射.md",
+    "项目笔记：SaaS短链接/Sentinal限流管理.md",
+    "项目笔记：SaaS短链接/自定义注解.md",
+    "项目笔记：SaaS短链接/用户模块.md",
+    "项目笔记：SaaS短链接/线程池.md",
+    "项目笔记：SaaS短链接/消息队列相关.md",
+    "后端开发学习/JAVA/JAVA基础/8.1 锁.md",
+    "未命名 1.base",
+    "未命名.base",
+    "项目笔记：牛券Coupon/责任链实现.md",
+    "后端开发学习/RocketMQ/4、异步消息与其他消息.md",
+    "Pasted image 20250824173028.png",
+    "后端开发学习/SpringBoot/图片",
+    "后端开发学习/SpringBoot/图片/Pasted image 20250824164835.png",
+    "后端开发学习/JVM——运维相关要学/图片/Pasted image 20250824144446.png",
+    "后端开发学习/SpringBoot",
+    "后端开发学习/JVM——运维相关要学/图片/Pasted image 20250824150053.png",
+    "后端开发学习/JVM——运维相关要学/图片/Pasted image 20250824145710.png",
+    "后端开发学习/JVM——运维相关要学/图片/Pasted image 20250824145014.png",
+    "后端开发学习/JVM——运维相关要学/图片/Pasted image 20250824141538.png",
+    "后端开发学习/JVM——运维相关要学/图片/Pasted image 20250824144326.png",
+    "后端开发学习/JVM——运维相关要学/图片/Pasted image 20250824142328.png",
+    "QQ_1756017799743.png",
     "未命名 2.base",
     "后端开发学习/面经笔记",
     "后端开发学习/面经笔记/图片",
     "项目笔记：牛券Coupon/图片",
     "项目笔记：牛券Coupon",
     "后端开发学习/Docker/图片",
-    "后端开发学习/Docker",
-    "后端开发学习/Linux",
     "未命名.canvas"
   ]
 }
