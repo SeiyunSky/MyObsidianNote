@@ -111,11 +111,11 @@ List<String> names = users.stream()
 
 **数值流专用方法**
 
-|方法|说明|示例|
-|---|---|---|
-|`sum()`|求和(仅限数值流)|`intStream.sum()`|
-|`average()`|求平均值|`intStream.average()`|
-|`summaryStatistics()`|获取统计摘要|`intStream.summaryStatistics()`|
+| 方法                    | 说明        | 示例                              |
+| --------------------- | --------- | ------------------------------- |
+| `sum()`               | 求和(仅限数值流) | `intStream.sum()`               |
+| `average()`           | 求平均值      | `intStream.average()`           |
+| `summaryStatistics()` | 获取统计摘要    | `intStream.summaryStatistics()` |
 **** 迭代方法
 
 |方法|说明|示例|
