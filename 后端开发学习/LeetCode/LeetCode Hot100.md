@@ -1072,3 +1072,14 @@ class Solution {
     }
 }
 ```
+
+## 重复的子字符串
+![[QQ_1756712636065.png|400]]
+```java
+直接找到对应的子串
+Class Solution {
+    public boolean repeatedSubstringPattern(String s) {  
+        return (s+s).substring(1,2*s.length()-1).contains(s);
+    }
+}
+```
