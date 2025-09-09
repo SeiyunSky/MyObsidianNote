@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文研究/Balanced Federal.md",
+                "file": "后端开发学习/Redis/Redis持久化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Balanced Federal"
+              "title": "Redis持久化"
             }
           }
         ],
@@ -207,12 +207,15 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "669dfed863311aa3",
   "lastOpenFiles": [
+    "后端开发学习/Redis/Redis.md",
+    "后端开发学习/Redis/Redis持久化.md",
+    "后端开发学习/Redis/RedisStream实现消息队列.md",
+    "论文研究/Balanced Federal.md",
     "论文研究/图片/Pasted image 20250909201655.png",
     "论文研究/图片/Pasted image 20250909201847.png",
     "论文研究/图片/Pasted image 20250909202131.png",
-    "论文研究/Balanced Federal.md",
     "未命名 1.base",
     "未命名.base",
     "论文研究/图片/Pasted image 20250909201310.png",
@@ -244,8 +247,6 @@
     "推荐算法学习.md",
     "项目笔记：SaaS短链接/短链接分组模块.md",
     "项目笔记：牛券Coupon/业务架构.md",
-    "项目笔记：牛券Coupon/责任链实现.md",
-    "项目笔记：SaaS短链接/短链接监控.md",
     "后端开发学习/Redis/图片",
     "后端开发学习/SpringBoot/图片",
     "后端开发学习/SpringBoot",

@@ -9,7 +9,25 @@
   "autoCreateForAttachmentFolder": false,
   "autoCreateForFiles": false,
   "enableCollapsing": false,
-  "excludeFolders": [],
+  "excludeFolders": [
+    {
+      "type": "folder",
+      "id": "c3a51ae3-b975-4862-851b-1f7e041c3ba1",
+      "path": "后端开发学习/Redis",
+      "subFolders": false,
+      "disableSync": true,
+      "disableAutoCreate": true,
+      "disableFolderNote": true,
+      "enableCollapsing": false,
+      "position": 0,
+      "excludeFromFolderOverview": false,
+      "string": "",
+      "hideInSettings": true,
+      "showFolderNote": false,
+      "detached": true,
+      "detachedFilePath": "后端开发学习/Redis基本语法/Redis基本语法.md"
+    }
+  ],
   "whitelistFolders": [],
   "showDeleteConfirmation": true,
   "underlineFolder": true,
