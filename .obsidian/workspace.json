@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端开发学习/Redis/Redis持久化.md",
+                "file": "后端开发学习/MySQL/进阶篇/5、存储过程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis持久化"
+              "title": "5、存储过程"
             }
           }
         ],
@@ -195,7 +195,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -204,27 +203,29 @@
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
       "workspaces:管理工作区布局": false,
-      "random-note:开始漫游笔记": false
+      "random-note:开始漫游笔记": false,
+      "bases:创建新数据库": false
     }
   },
-  "active": "669dfed863311aa3",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
     "后端开发学习/Redis/Redis.md",
+    "后端开发学习/Redis/图片/Pasted image 20250909205355.png",
     "后端开发学习/Redis/Redis持久化.md",
+    "未命名 2.base",
+    "未命名 1.base",
+    "未命名.base",
     "后端开发学习/Redis/RedisStream实现消息队列.md",
     "论文研究/Balanced Federal.md",
     "论文研究/图片/Pasted image 20250909201655.png",
     "论文研究/图片/Pasted image 20250909201847.png",
     "论文研究/图片/Pasted image 20250909202131.png",
-    "未命名 1.base",
-    "未命名.base",
     "论文研究/图片/Pasted image 20250909201310.png",
     "论文研究/图片/Pasted image 20250909200542.png",
     "论文研究/图片/Pasted image 20250909200506.png",
     "论文研究/图片/Pasted image 20250909195447.png",
     "论文研究/图片/Pasted image 20250909195104.png",
     "论文研究/图片/Pasted image 20250909195056.png",
-    "论文研究/图片/Pasted image 20250909194446.png",
     "后端开发学习/JVM——运维相关要学/1、内存与垃圾回收/对象引用.md",
     "后端开发学习/JVM——运维相关要学/1、内存与垃圾回收/堆 方法区.md",
     "后端开发学习/MySQL/基础篇/2、DML.md",
@@ -246,11 +247,9 @@
     "Unity/4、导航系统.md",
     "推荐算法学习.md",
     "项目笔记：SaaS短链接/短链接分组模块.md",
-    "项目笔记：牛券Coupon/业务架构.md",
     "后端开发学习/Redis/图片",
     "后端开发学习/SpringBoot/图片",
     "后端开发学习/SpringBoot",
-    "未命名 2.base",
     "后端开发学习/面经笔记",
     "后端开发学习/面经笔记/图片",
     "项目笔记：牛券Coupon/图片",
