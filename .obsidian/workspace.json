@@ -4,24 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "e91bedc061a5a376",
+        "id": "2ed7f94e2c222c4e",
         "type": "tabs",
         "children": [
           {
-            "id": "ec3879dc1fdd00aa",
+            "id": "93cf0dd08bcbbc52",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "论文研究/图片/Pasted image 20250909202131.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250909202131"
+            }
+          },
+          {
+            "id": "1cfc51cf5546340b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "论文研究/图片/Pasted image 20250909201847.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250909201847"
+            }
+          },
+          {
+            "id": "669dfed863311aa3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端开发学习/Linux/Linux常用命令.md",
+                "file": "论文研究/Balanced Federal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux常用命令"
+              "title": "Balanced Federal"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -184,44 +209,43 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
-    "后端开发学习/RocketMQ/8、事务消息.md",
-    "后端开发学习/RocketMQ/10、高级特性.md",
-    "后端开发学习/RocketMQ/1、MQ基础.md",
-    "后端开发学习/RocketMQ/9、集群相关.md",
-    "后端开发学习/RocketMQ/7、顺序消息.md",
-    "后端开发学习/RocketMQ/5、tag过滤和sql过滤.md",
-    "后端开发学习/RocketMQ/6、Springboot整合.md",
-    "后端开发学习/RocketMQ/4、异步消息与其他消息.md",
-    "后端开发学习/RocketMQ/2、简单消息.md",
-    "后端开发学习/RocketMQ/3、多生产多消费.md",
-    "后端开发学习/Linux/Linux常用命令.md",
-    "后端开发学习/Redis/Redis.md",
-    "后端开发学习/MyBatis-Plus/拓展功能.md",
-    "后端开发学习/MyBatis-Plus/插件功能.md",
-    "后端开发学习/面经笔记/面经笔记.md",
-    "后端开发学习/Docker/2、Docker命令.md",
-    "后端开发学习/Docker/1、基本内容.md",
-    "后端开发学习/Docker/4、容器转镜像.md",
-    "后端开发学习/Docker/3、数据卷配置.md",
-    "项目笔记：SaaS短链接/线程池.md",
-    "项目笔记：SaaS短链接/消息队列相关.md",
-    "项目笔记：SaaS短链接/微服务改造.md",
-    "项目笔记：SaaS短链接/短链接功能模块.md",
-    "后端开发学习/SpringBoot/基本内容.md",
-    "后端开发学习/SpringBoot/图片/Pasted image 20250824164835.png",
-    "后端开发学习/MySQL/进阶篇/5、存储过程.md",
-    "后端开发学习/MySQL/进阶篇/6、触发器.md",
-    "后端开发学习/LeetCode/图片/QQ_1756712636065.png",
-    "后端开发学习/MySQL/基础篇/图片/Pasted image 20250826204911.png",
+    "论文研究/图片/Pasted image 20250909201655.png",
+    "论文研究/图片/Pasted image 20250909201847.png",
+    "论文研究/图片/Pasted image 20250909202131.png",
+    "论文研究/Balanced Federal.md",
     "未命名 1.base",
     "未命名.base",
-    "项目笔记：苍穹外卖/图片/Pasted image 20250625193843.png",
-    "后端开发学习/Redis/图片/Pasted image 20250825160005.png",
-    "后端开发学习/Redis/图片/Pasted image 20250825155301.png",
-    "Pasted image 20250825155245.png",
-    "后端开发学习/Redis/图片/Pasted image 20250825153702.png",
-    "后端开发学习/Redis/图片/Pasted image 20250825153445.png",
-    "后端开发学习/Redis/图片/Pasted image 20250825152933.png",
+    "论文研究/图片/Pasted image 20250909201310.png",
+    "论文研究/图片/Pasted image 20250909200542.png",
+    "论文研究/图片/Pasted image 20250909200506.png",
+    "论文研究/图片/Pasted image 20250909195447.png",
+    "论文研究/图片/Pasted image 20250909195104.png",
+    "论文研究/图片/Pasted image 20250909195056.png",
+    "论文研究/图片/Pasted image 20250909194446.png",
+    "后端开发学习/JVM——运维相关要学/1、内存与垃圾回收/对象引用.md",
+    "后端开发学习/JVM——运维相关要学/1、内存与垃圾回收/堆 方法区.md",
+    "后端开发学习/MySQL/基础篇/2、DML.md",
+    "后端开发学习/MySQL/基础篇/3、DQL.md",
+    "后端开发学习/MySQL/基础篇/4、DCL.md",
+    "后端开发学习/MySQL/基础篇/5、函数.md",
+    "后端开发学习/MySQL/基础篇/1、DDL.md",
+    "后端开发学习/MySQL/进阶篇/1、存储引擎.md",
+    "后端开发学习/MySQL/进阶篇/2、索引.md",
+    "后端开发学习/MySQL/进阶篇/3、SQL优化.md",
+    "后端开发学习/JAVA/知识碎片/正则表达式.md",
+    "后端开发学习/JAVA/知识碎片/设计原则.md",
+    "后端开发学习/JAVA/知识碎片/部分注解作用.md",
+    "后端开发学习/RocketMQ/1、MQ基础.md",
+    "项目笔记：SaaS短链接/消息队列相关.md",
+    "Unity/1、Csharp设计模式专题.md",
+    "Unity/2、Unity组件思想.md",
+    "Unity/5、Unity资源管理.md",
+    "Unity/4、导航系统.md",
+    "推荐算法学习.md",
+    "项目笔记：SaaS短链接/短链接分组模块.md",
+    "项目笔记：牛券Coupon/业务架构.md",
+    "项目笔记：牛券Coupon/责任链实现.md",
+    "项目笔记：SaaS短链接/短链接监控.md",
     "后端开发学习/Redis/图片",
     "后端开发学习/SpringBoot/图片",
     "后端开发学习/SpringBoot",
