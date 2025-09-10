@@ -213,7 +213,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,7 +230,7 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "540c117000d0f917",
   "lastOpenFiles": [
     "论文研究/图片/Pasted image 20250910205614.png",
     "论文研究/图片/Pasted image 20250910200435.png",
