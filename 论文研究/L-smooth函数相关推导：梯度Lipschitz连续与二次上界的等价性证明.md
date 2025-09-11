@@ -1,0 +1,1 @@
+[【个人笔记】L-smooth函数相关推导：梯度Lipschitz连续与二次上界的等价性证明_梯度利普希茨连续-CSDN博客](https://blog.csdn.net/weixin_45648182/article/details/146592953)

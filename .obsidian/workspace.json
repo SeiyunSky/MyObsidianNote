@@ -4,71 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "2ed7f94e2c222c4e",
+        "id": "9d559c2777f592a3",
         "type": "tabs",
         "children": [
           {
-            "id": "93cf0dd08bcbbc52",
+            "id": "26da5c3ac0a1186e",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "论文研究/图片/Pasted image 20250909202131.png"
+                "file": "论文研究/Balanced Federal.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250909202131"
-            }
-          },
-          {
-            "id": "1cfc51cf5546340b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "论文研究/图片/Pasted image 20250909201847.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250909201847"
-            }
-          },
-          {
-            "id": "669dfed863311aa3",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "论文研究/图片/Pasted image 20250910200435.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250910200435"
-            }
-          },
-          {
-            "id": "318c01de04941b08",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "论文研究/图片/Pasted image 20250910205614.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250910205614"
-            }
-          },
-          {
-            "id": "540c117000d0f917",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "论文研究/图片/Pasted image 20250910210716.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250910210716"
+              "icon": "lucide-file",
+              "title": "Balanced Federal"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -125,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 267.5,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -213,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,12 +183,12 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "540c117000d0f917",
+  "active": "26da5c3ac0a1186e",
   "lastOpenFiles": [
+    "论文研究/图片/Pasted image 20250910210716.png",
     "论文研究/图片/Pasted image 20250910205614.png",
     "论文研究/图片/Pasted image 20250910200435.png",
     "论文研究/Balanced Federal.md",
-    "论文研究/图片/Pasted image 20250910210716.png",
     "后端开发学习/MySQL/进阶篇/5、存储过程.md",
     "后端开发学习/Redis/Redis.md",
     "后端开发学习/Redis/图片/Pasted image 20250909205355.png",

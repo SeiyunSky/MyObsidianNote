@@ -94,7 +94,7 @@ FL的目的是解决ERM问题——经验风险最小化
     在训练完毕后，客户端i从邻居j那里接收$w_j^{(t+\frac{1}{2})}$
 - **本地模型聚合**
     获得最终在第t轮训练完毕的模型，作为下一轮训练的起点，α代表了一个置信学习度，根据α的大小来决定对于自我革新和对邻居客户端模型的更新权重。
-    $$\mathbf{w}_{i}^{t+1}=\alpha\mathbf{w}_{i}^{t+\frac{1}{2}}+(1-\alpha)\mathrm{AGG}\left\{\mathbf{w}_{j}^{t+\frac{1}{2}}, j\in\mathcal{N}_{i}\right\}$$
+    $$\mathbf{w}_{i}^{t+1}=\alpha\mathbf{w}_{i}^{t+\frac{1}{2}}+(1-\alpha)\mathrm{AGG}\left\{\mathbf{w}_{j}^{t+\frac{1}{2}}, j\in\mathcal{N}_{i}\right\}  \ \ \ \ \ \ \ \ \ \ \ \ \ (2)$$
     AGG是一个占位符，可以引入任何【鲁棒聚合规则】
 
 **On the (In)security of Peer-to-Peer Decentralized Machine Learning**——$$\mathbf{w}_{i}^{t+1}=\operatorname{AGG}\left\{\mathbf{w}_{j}^{t+\frac{1}{2}}, j\in\mathcal{N}_{i}\text{ with }\mathcal{N}_{i}=\mathcal{N}_{i}\cup\{i\}\right\}$$
@@ -128,6 +128,41 @@ $\mathbf{w}^* = \underset{\mathbf{w}}{\operatorname{argmin}} \sum_{i=1}^{n} \| \
   利用分布式训练的特点，分布化植入触发器。
 
 
+### **Balance Alorithm**
+$$\left\| w_{i}^{t + \frac{1}{2}} - w_{j}^{t + \frac{1}{2}} \right\| \leq \gamma \cdot \exp(-\kappa \cdot \lambda(t)) \cdot \left\| w_{i}^{t + \frac{1}{2}} \right\| \quad \ \ \ \ \ \ \ \ (3)$$
+首先，模型之间的绝对差异需要小于
+`原客户端模型*容忍度*每轮次的动态衰减因子`
+确保在学习后期的高度一致性
+其中的主要超参数是  
+$k$ 决定函数下降速率，用来控制容忍度收紧速度 根据网络内数据差异化情况去选择大小
+γ 基础容忍度 设定在最宽松的情况下所能容忍的相对最大差异
+$λ(t)$ 作为根据时间来缩紧的参数，往往设置为当前轮次同总轮次的比例关系
+
+$$w_{i}^{t+1} = \alpha w_{i}^{t + \frac{1}{2}} + (1 - \alpha) \frac{1}{|S_{i}^{t}|} \sum_{j \in S_{i}^{t}} w_{j}^{t + \frac{1}{2}}$$
+最后将通过Balance审查的邻居进行聚合
+
+#### 基本假设
+- 强凸性——$$F(w_1) + \langle \nabla F(w_1), w_2 - w_1 \rangle + \frac{\mu}{2} \| w_2 - w_1 \|^2 \leq F(w_2)$$
+- L-SMOOTH——$$\|\nabla F(w_1) - \nabla F(w_2)\| \leq L \|w_1 - w_2\|$$
+  其推论包含了![[Pasted image 20250911171430.png]]
+  [# L-smooth函数相关推导：梯度Lipschitz连续与二次上界的等价性证明](obsidian://open?vault=MyObsidianNote-main&file=%E8%AE%BA%E6%96%87%E7%A0%94%E7%A9%B6%2FL-smooth%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3%E6%8E%A8%E5%AF%BC%EF%BC%9A%E6%A2%AF%E5%BA%A6Lipschitz%E8%BF%9E%E7%BB%AD%E4%B8%8E%E4%BA%8C%E6%AC%A1%E4%B8%8A%E7%95%8C%E7%9A%84%E7%AD%89%E4%BB%B7%E6%80%A7%E8%AF%81%E6%98%8E)
+
+- Unbiased & Bounded Variance——
+  训练方向均值最终等于实际梯度变化结果$\mathbb{E}[g(\mathbf{w}_i)] = \nabla F(\mathbf{w}_i)$   
+  两者之间的差异有一个阈值$\mathbb{E}[\| g(\mathbf{w}_i) - \nabla F(\mathbf{w}_i) \|^2] \leq \sigma^2$
+- 有界性——∀i∈B, we have ∥wi​∥≤ψ, and ∥∇F(wi​)∥≤ρ
+- 不存在孤岛好人
+
+### 两个基本定理
+**定理一**——强凸
+ 左边——误差均值
+ 右边——指数衰减下的历史遗留的初始误差+随机梯度带来的抖动+拜占庭容忍误差
+  $$\mathbb{E}\left[F\left(\mathbf{w}_{i}^{T}\right)-F\left(\mathbf{w}^{\star}\right)\right] \leq (1-\mu\eta)^{T}\left[F\left(\mathbf{w}_{i}^{0}\right)-F\left(\mathbf{w}^{\star}\right)\right] + \frac{2L\eta\delta^{2}}{\mu} + \frac{2\gamma\rho\psi(1-\alpha)}{\mu\eta}$$
+其中$γ\leq\frac{\mu}{L·(1-a)}$  学习率范围也要在推算中保证学习过程的无偏性——基于和$\mu,\eta$的范围
+  ![[Pasted image 20250911162643.png]]
+  
+  
+  
   
   
 
