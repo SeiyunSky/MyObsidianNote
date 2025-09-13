@@ -29,6 +29,8 @@ Awake() → OnEnable() → Start()
 
 ### 协程
 协同程序，而非多线程
+IEnumerator本身不会自动执行，只是一个迭代器接口，定义了MoveNext()和Current但不会自动允许。
+Unity提供了StartCoroutine方法驱动协程的yield逻辑
 ```Csharp
 协程不会因为前面的return，而不执行后面的代码
 public IEnumerator 名字(){

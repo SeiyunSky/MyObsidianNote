@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文研究/Balanced Federal.md",
+                "file": "Unity/项目笔记：Slay the spire/基本知识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Balanced Federal"
+              "title": "基本知识"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5,
-    "collapsed": true
+    "width": 267.5
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -185,10 +184,19 @@
   },
   "active": "26da5c3ac0a1186e",
   "lastOpenFiles": [
+    "Unity/项目笔记：Slay the spire/轮子.md",
+    "Unity/1、Csharp设计模式专题.md",
+    "Unity/项目笔记：Slay the spire/基本知识.md",
+    "Unity/2、Unity组件思想.md",
+    "Unity/项目笔记：Slay the spire",
+    "Unity/3、UI系统.md",
+    "Unity/4、导航系统.md",
+    "Unity/5、Unity资源管理.md",
+    "Unity/6、输入系统.md",
+    "论文研究/Balanced Federal.md",
     "论文研究/图片/Pasted image 20250910210716.png",
     "论文研究/图片/Pasted image 20250910205614.png",
     "论文研究/图片/Pasted image 20250910200435.png",
-    "论文研究/Balanced Federal.md",
     "后端开发学习/MySQL/进阶篇/5、存储过程.md",
     "后端开发学习/Redis/Redis.md",
     "后端开发学习/Redis/图片/Pasted image 20250909205355.png",
@@ -216,20 +224,12 @@
     "后端开发学习/JAVA/知识碎片/正则表达式.md",
     "后端开发学习/JAVA/知识碎片/设计原则.md",
     "后端开发学习/JAVA/知识碎片/部分注解作用.md",
-    "后端开发学习/RocketMQ/1、MQ基础.md",
-    "项目笔记：SaaS短链接/消息队列相关.md",
-    "Unity/1、Csharp设计模式专题.md",
-    "Unity/2、Unity组件思想.md",
-    "Unity/5、Unity资源管理.md",
-    "Unity/4、导航系统.md",
-    "推荐算法学习.md",
     "后端开发学习/Redis/图片",
     "后端开发学习/SpringBoot/图片",
     "后端开发学习/SpringBoot",
     "后端开发学习/面经笔记",
     "后端开发学习/面经笔记/图片",
     "项目笔记：牛券Coupon/图片",
-    "项目笔记：牛券Coupon",
     "未命名.canvas"
   ]
 }
