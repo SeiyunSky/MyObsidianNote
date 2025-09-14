@@ -160,6 +160,7 @@ $$w_{i}^{t+1} = \alpha w_{i}^{t + \frac{1}{2}} + (1 - \alpha) \frac{1}{|S_{i}^{t
   $$\mathbb{E}\left[F\left(\mathbf{w}_{i}^{T}\right)-F\left(\mathbf{w}^{\star}\right)\right] \leq (1-\mu\eta)^{T}\left[F\left(\mathbf{w}_{i}^{0}\right)-F\left(\mathbf{w}^{\star}\right)\right] + \frac{2L\eta\delta^{2}}{\mu} + \frac{2\gamma\rho\psi(1-\alpha)}{\mu\eta}$$
 其中$γ\leq\frac{\mu}{L·(1-a)}$  学习率范围也要在推算中保证学习过程的无偏性——基于和$\mu,\eta$的范围
   ![[Pasted image 20250911162643.png]]
+**定理二**——非强凸下的证明
   
   
   
