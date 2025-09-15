@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端开发学习/Redis/搭建Redis主从结构.md",
+                "file": "后端开发学习/Redis/Redis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "搭建Redis主从结构"
+              "title": "Redis"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5,
-    "collapsed": true
+    "width": 267.5
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -167,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,9 +183,9 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "65ef5e3f6999041c",
   "lastOpenFiles": [
-    "Pasted image 20250915224412.png",
+    "后端开发学习/Redis/图片/Pasted image 20250915224412.png",
     "后端开发学习/Redis/Redis.md",
     "后端开发学习/Redis/搭建Redis主从结构.md",
     "后端开发学习/Redis/Redis持久化.md",
@@ -219,7 +219,6 @@
     "Unity/5、Unity资源管理.md",
     "Unity/6、输入系统.md",
     "论文研究/2025.9.14 均衡联邦算法/图片/Pasted image 20250910210716.png",
-    "论文研究/2025.9.14 均衡联邦算法/图片/Pasted image 20250910205614.png",
     "后端开发学习/MySQL/进阶篇/5、存储过程.md",
     "未命名 2.base",
     "未命名 1.base",
