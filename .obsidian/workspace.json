@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,7 +183,7 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "26da5c3ac0a1186e",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
     "后端开发学习/Redis/Redis.md",
     "论文研究/2025.9.21/Balance Federal 简易复现.md",
