@@ -410,6 +410,7 @@ public class Test {
               }
           }
       }, "t2");
+      
       t2.start();
       Thread.sleep(500);
       t2.interrupt();
@@ -422,7 +423,9 @@ public class Test {
 
 
 
-##### 打断 park
+##### 打断 park —— 阻塞当前线程，用于构建AQS等高级同步工具
+只能被unpark() 或者 中断唤醒
+park是LockSupport.park()内的静态方法，对于中断管理会直接返回，保留中断状态（原生不支持）
 
 park 作用类似 sleep，打断 park 线程，不会清空打断状态（true）
 
@@ -434,6 +437,7 @@ public static void main(String[] args) throws Exception {
         System.out.println("unpark...");
         System.out.println("打断状态：" + Thread.currentThread().isInterrupted());//打断状态：true
     }, "t1");
+    
     t1.start();
     Thread.sleep(2000);
     t1.interrupt();
@@ -441,6 +445,10 @@ public static void main(String[] args) throws Exception {
 ```
 
 如果打断标记已经是 true, 则 park 会失效
+**许可证机制**：
+每个线程关联一个隐式的许可证，不能积累许可证
+如果有许可证，就可以抵挡一次park，相当于圣盾
+可以避免notify()提前与wait()导致的信号丢失问题
 
 ```java
 LockSupport.park();
@@ -502,6 +510,7 @@ class TwoPhaseTermination {
                         Thread.sleep(1000);					// 睡眠
                         System.out.println("执行监控记录");	// 在此被打断不会异常
                     } catch (InterruptedException e) {		// 在睡眠期间被打断，进入异常处理的逻辑
+                    //sleep被中断后会interrupted会返回false，因此根据需求可能需要手动设置
                         e.printStackTrace();
                         // 重新设置打断标记，打断 sleep 会清除打断状态
                         thread.interrupt();
@@ -633,7 +642,6 @@ Java 提供了线程优先级的机制，优先级会提示（hint）调度器�
 说明：并不能通过优先级来判断线程执行的先后顺序
 
 
-
 ***
 
 
@@ -709,15 +717,15 @@ Windows：
 Linux：
 
 * ps -ef 查看所有进程
-* ps -fT -p <PID> 查看某个进程（PID）的所有线程
+* ps -fT -p \<PID> 查看某个进程（PID）的所有线程
 * kill 杀死进程
 * top 按大写 H 切换是否显示线程
-* top -H -p <PID> 查看某个进程（PID）的所有线程
+* top -H -p \<PID> 查看某个进程（PID）的所有线程
 
 Java：
 
 * jps 命令查看所有 Java 进程
-* jstack <PID> 查看某个 Java 进程（PID）的所有线程状态
+* jstack \<PID> 查看某个 Java 进程（PID）的所有线程状态
 * jconsole 来查看某个 Java 进程中线程的运行情况（图形界面）
 
 
@@ -747,7 +755,7 @@ Java：
 * 阻塞式的解决方案：synchronized，lock
 * 非阻塞式的解决方案：原子变量
 
-管程（monitor）：由局部于自己的若干公共变量和所有访问这些公共变量的过程所组成的软件模块，保证同一时刻只有一个进程在管程内活动，即管程内定义的操作在同一时刻只被一个进程调用（由编译器实现）
+**管程**（monitor）：由局部于自己的若干公共变量和所有访问这些公共变量的过程所组成的软件模块，保证同一时刻只有一个进程在管程内活动，即管程内定义的操作在同一时刻只被一个进程调用（由编译器实现）
 
 **synchronized：对象锁，保证了临界区内代码的原子性**，采用互斥的方式让同一时刻至多只有一个线程能持有对象锁，其它线程获取这个对象锁时会阻塞，保证拥有锁的线程可以安全的执行临界区内的代码，不用担心线程上下文切换
 
@@ -767,7 +775,7 @@ Java：
 
 
 
-### syn-ed
+### synchronized
 
 #### 使用锁
 
@@ -778,13 +786,11 @@ Java：
 synchronized 是可重入、不公平的重量级锁
 
 原则上：
-
 * 锁对象建议使用共享资源
 * 在实例方法中使用 this 作为锁对象，锁住的 this 正好是共享资源
 * 在静态方法中使用类名 .class 字节码作为锁对象，因为静态成员属于类，被所有实例对象共享，所以需要锁住类
 
 同步代码块格式：
-
 ```java
 synchronized(锁对象){
 	// 访问共享资源的核心代码
@@ -955,7 +961,7 @@ Monitor 被翻译为监视器或管程
 
 * 开始时 Monitor 中 Owner 为 null
 * 当 Thread-2 执行 synchronized(obj) 就会将 Monitor 的所有者 Owner 置为 Thread-2，Monitor 中只能有一个 Owner，**obj 对象的 Mark Word 指向 Monitor**，把**对象原有的 MarkWord 存入线程栈中的锁记录**中（轻量级锁部分详解）
-  <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Java/JUC-Monitor工作原理1.png" style="zoom:67%;" />
+  <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Java/JUC-Monitor工作原理1.png" style="zoom:100%;" />
 * 在 Thread-2 上锁的过程，Thread-3、Thread-4、Thread-5 也执行 synchronized(obj)，就会进入 EntryList BLOCKED（双向链表）
 * Thread-2 执行完同步代码块的内容，根据 obj 对象头中 Monitor 地址寻找，设置 Owner 为空，把线程栈的锁记录中的对象头的值设置回 MarkWord
 * 唤醒 EntryList 中等待的线程来竞争锁，竞争是**非公平的**，如果这时有新的线程想要获取锁，可能直接就抢占到了，阻塞队列的线程就会继续阻塞
@@ -1178,11 +1184,11 @@ public static void method2() {
 自旋锁情况：
 
 * 自旋成功的情况：
-      <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Java/JUC-自旋成功.png" style="zoom: 80%;" />
+      <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Java/JUC-自旋成功.png" style="zoom: 60%;" />
 
 * 自旋失败的情况：
 
-  <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Java/JUC-自旋失败.png" style="zoom:80%;" />
+  <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Java/JUC-自旋失败.png" style="zoom:50%;" />
 
 自旋锁说明：
 

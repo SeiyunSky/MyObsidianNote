@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 267.5,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -182,7 +183,7 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "26da5c3ac0a1186e",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
     "后端开发学习/MyBatis-Plus/拓展功能.md",
     "后端开发学习/JUC/JUC笔记.md",
