@@ -1288,24 +1288,17 @@ public class SpinLock {
       return sb.toString();
   }
   ```
-
 扩展到第一个 append() 操作之前直至最后一个 append() 操作之后，只需要加锁一次就可以
-
-
-
 ****
 
 
 
 #### 多把锁
-
 多把不相干的锁：一间大屋子有两个功能睡觉、学习，互不相干。现在一人要学习，一人要睡觉，如果只用一间屋子（一个对象锁）的话，那么并发度很低
 
 将锁的粒度细分：
-
 * 好处，是可以增强并发度
 * 坏处，如果一个线程需要同时获得多把锁，就容易发生死锁 
-
 解决方法：准备多个对象锁
 
 ```java
@@ -1430,7 +1423,7 @@ public class Dead {
       at thread.TestDeadLock$$Lambda$1/495053715
   ```
 
-* Linux 下可以通过 top 先定位到 CPU 占用高的 Java 进程，再利用 `top -Hp 进程id` 来定位是哪个线程，最后再用 jstack <pid>的输出来看各个线程栈
+* Linux 下可以通过 top 先定位到 CPU 占用高的 Java 进程，再利用 `top -Hp 进程id` 来定位是哪个线程，最后再用 jstack \<pid>的输出来看各个线程栈
 
 * 避免死锁：避免死锁要注意加锁顺序
 
@@ -1489,7 +1482,7 @@ class TestLiveLock {
 
 
 
-### wait-ify
+### wait-notify
 
 #### 基本使用
 
@@ -1609,7 +1602,7 @@ public class demo {
 
 
 
-### park-un
+### park-unpark
 
 LockSupport 是用来创建锁和其他同步类的**线程原语**
 
@@ -1636,7 +1629,6 @@ public static void main(String[] args) {
 ```
 
 LockSupport 出现就是为了增强 wait & notify 的功能：
-
 * wait，notify 和 notifyAll 必须配合 Object Monitor 一起使用，而 park、unpark 不需要
 * park & unpark **以线程为单位**来阻塞和唤醒线程，而 notify 只能随机唤醒一个等待线程，notifyAll 是唤醒所有等待线程
 * park & unpark 可以先 unpark，而 wait & notify 不能先 notify。类比生产消费，先消费发现有产品就消费，没有就等待；先生产就直接产生商品，然后线程直接消费
