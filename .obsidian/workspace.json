@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity/项目笔记：Slay the spire/Game Action System.md",
+                "file": "Unity/项目笔记：Slay the spire/基本知识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Game Action System"
+              "title": "基本知识"
             }
           }
         ]
@@ -182,10 +182,10 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "4aa55184634efe52",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
-    "Pasted image 20250917222023.png",
     "Unity/项目笔记：Slay the spire/Game Action System.md",
+    "Pasted image 20250917222023.png",
     "Unity/1、Csharp设计模式专题.md",
     "后端开发学习/JAVA/JAVA基础/2、集合进阶.md",
     "后端开发学习/JAVA/JAVA基础/2.1 HashMap源码分析.md",
