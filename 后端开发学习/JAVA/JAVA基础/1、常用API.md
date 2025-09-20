@@ -35,3 +35,24 @@ Object obj = new Object();
 String str = obj.toString();
 
 ```
+
+### **Record**
+一种特殊的类，用于存储数据
+- 内容不可变
+- 自动生成构造函数和访问方法
+- 自动实现equals(),hashcode()和toString();
+```java
+利用record + 存储容器
+可以很方便的存储一些数据集合
+比方说：
+record Packet(int source, int destination, int timestamp) {}
+
+List<Packet> packets = new ArrayList<>();
+packets.add(new Packet(1, 2, 100));
+packets.add(new Packet(3, 4, 200));
+
+// 查询所有发往目的地2的数据包
+List<Packet> filtered = packets.stream()
+                              .filter(p -> p.destination() == 2)
+                              .toList();
+```

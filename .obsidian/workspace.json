@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity/项目笔记：Slay the spire/基本知识.md",
+                "file": "后端开发学习/JAVA/JAVA基础/1、常用API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "基本知识"
+              "title": "1、常用API"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 267.5,
+    "collapsed": true
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -184,11 +185,19 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
-    "Unity/项目笔记：Slay the spire/Game Action System.md",
+    "后端开发学习/JAVA/JAVA基础/2、集合进阶.md",
+    "后端开发学习/JAVA/JAVA基础/2.4 不可变集合.md",
+    "后端开发学习/JAVA/JAVA基础/2.3 Collections 工具类.md",
+    "后端开发学习/JAVA/知识碎片/IoC 和 APO.md",
+    "后端开发学习/JAVA/知识碎片/Java并发与框架部分知识.md",
+    "后端开发学习/JAVA/知识碎片/注解.md",
+    "后端开发学习/JAVA/知识碎片/设计原则.md",
+    "论文研究/2025.9.21/组会：学习算法的稳定性和泛化性介绍.md",
+    "论文研究/2025.9.21/Balance Federal 简易复现.md",
     "Unity/项目笔记：Slay the spire/基本知识.md",
+    "Unity/项目笔记：Slay the spire/Game Action System.md",
     "Pasted image 20250917222023.png",
     "Unity/1、Csharp设计模式专题.md",
-    "后端开发学习/JAVA/JAVA基础/2、集合进阶.md",
     "后端开发学习/JAVA/JAVA基础/2.1 HashMap源码分析.md",
     "后端开发学习/JAVA/JAVA基础/8.1 锁.md",
     "后端开发学习/JAVA/JAVA基础/8、多线程.md",
@@ -205,13 +214,6 @@
     "后端开发学习/JUC/Prog.md",
     "后端开发学习/JUC",
     "后端开发学习/新建文件夹",
-    "后端开发学习/MyBatis-Plus/核心功能.md",
-    "后端开发学习/MyBatis-Plus/插件功能.md",
-    "后端开发学习/Linux/Linux常用命令.md",
-    "后端开发学习/JUC/未命名.md",
-    "后端开发学习/未命名.md",
-    "后端开发学习/Linux/Linux常用命令 1.md",
-    "论文研究/2025.9.21/Balance Federal 简易复现.md",
     "后端开发学习/Linux/Linux",
     "后端开发学习/Redis/图片/Pasted image 20250915224412.png",
     "后端开发学习/Redis/图片/Pasted image 20250915223632.png",
