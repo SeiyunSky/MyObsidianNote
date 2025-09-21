@@ -430,7 +430,7 @@ def run_experiment(config):
                 alpha = config['alpha']
                 for key in local_models_states[i]:
                     final_state[key] = alpha * local_models_states[i][key] + (1 - alpha) * aggregated_state[key]
-                next_round_models_states[i] = final_state[key]
+                next_round_models_states[i] = final_state
             else: 
                 next_round_models_states[i] = local_models_states[i]
         # 将更新后的模型加载回客户端

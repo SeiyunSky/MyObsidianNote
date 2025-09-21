@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端开发学习/JAVA/JAVA基础/1、常用API.md",
+                "file": "Unity/项目笔记：Slay the spire/基本知识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1、常用API"
+              "title": "基本知识"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5,
-    "collapsed": true
+    "width": 267.5
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -183,18 +182,22 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "4aa55184634efe52",
   "lastOpenFiles": [
+    "Unity/项目笔记：Slay the spire/基本架构逻辑.md",
+    "Unity/项目笔记：Slay the spire/基本知识.md",
+    "论文研究/2025.9.21/Balance Federal 简易复现.md",
+    "论文研究/2025.9.21/组会：学习算法的稳定性和泛化性介绍.md",
+    "论文研究/2025.9.14 均衡联邦算法/Balanced Federal.md",
     "后端开发学习/JAVA/JAVA基础/2、集合进阶.md",
+    "后端开发学习/JAVA/JAVA基础/1、常用API.md",
+    "后端开发学习/JUC/JUC笔记.md",
     "后端开发学习/JAVA/JAVA基础/2.4 不可变集合.md",
     "后端开发学习/JAVA/JAVA基础/2.3 Collections 工具类.md",
     "后端开发学习/JAVA/知识碎片/IoC 和 APO.md",
     "后端开发学习/JAVA/知识碎片/Java并发与框架部分知识.md",
     "后端开发学习/JAVA/知识碎片/注解.md",
     "后端开发学习/JAVA/知识碎片/设计原则.md",
-    "论文研究/2025.9.21/组会：学习算法的稳定性和泛化性介绍.md",
-    "论文研究/2025.9.21/Balance Federal 简易复现.md",
-    "Unity/项目笔记：Slay the spire/基本知识.md",
     "Unity/项目笔记：Slay the spire/Game Action System.md",
     "Pasted image 20250917222023.png",
     "Unity/1、Csharp设计模式专题.md",
@@ -207,11 +210,7 @@
     "后端开发学习/JAVA/JAVA基础/11、动态代理.md",
     "后端开发学习/JAVA/知识碎片/部分注解作用.md",
     "Unity/项目笔记：Slay the spire/一些单体小轮子.md",
-    "Unity/项目笔记：Slay the spire/基本架构逻辑.md",
-    "后端开发学习/JUC/JUC笔记.md",
     "后端开发学习/MyBatis-Plus/拓展功能.md",
-    "后端开发学习/JUC/JUC.md",
-    "后端开发学习/JUC/Prog.md",
     "后端开发学习/JUC",
     "后端开发学习/新建文件夹",
     "后端开发学习/Linux/Linux",
