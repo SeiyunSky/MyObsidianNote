@@ -17,6 +17,7 @@ K是与wi最近的n-f-2个模型集合，根据评分得到对应比例，得到
 需要有一个绝对可信的中心权威作为尺度，由方向确定超参数，大小关系影响信任的基数
 
 **Geometric Median**——几何中位数，寻找到高维空间中和其他点距离之和最小的点。
+![[Pasted image 20250924132247.png]]
 
 #### 经验性防御
 **BayBFed**——BayBFed: Bayesian Backdoor Defense for Federated Learning

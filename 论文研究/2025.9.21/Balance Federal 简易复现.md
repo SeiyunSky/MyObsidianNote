@@ -264,7 +264,7 @@ class MaliciousClient(Client):
         elif self.attack_type == 'backdoor':
             # 后门攻击需要特殊的训练过程
             target_label = self.attack_config.get('backdoor_target_label', 7)
-            # 我们重新训练模型，同时学习主任务和后门任务
+            # 同时学习主任务和后门任务
             self.model.train()
             for epoch in range(1):
                 for data, target in self.train_loader:
@@ -298,7 +298,7 @@ from cnn_model import CNN_MNIST
 from data_loader import get_mnist_dataloaders
 from client import Client, MaliciousClient # 导入两个类
 
-# --- 辅助函数 (与之前相同) ---
+# --- 辅助函数 ---
 def get_model_norm(model_state_dict):
     norm = 0.0
     for param in model_state_dict.values():
@@ -352,7 +352,7 @@ def evaluate_model(model, test_loader, attack_config):
         
     return error_rate, attack_success_rate
 
-# --- 聚合算法 (与之前相同) ---
+# --- 聚合算法 ---
 def aggregate_fedavg(neighbor_models_states):
     avg_state_dict = OrderedDict()
     for key in neighbor_models_states[0]:
@@ -475,7 +475,7 @@ def visualize_results(results):
     rects1 = ax.bar(x - width/2, fedavg_ters, width, label='FedAvg (Max.TER)', color='salmon')
     rects2 = ax.bar(x + width/2, balance_ters, width, label='BALANCE (Max.TER)', color='skyblue')
 
-    # 如果有后门攻击，绘制 ASR 条形图 (使用虚线边框)
+    # 有后门攻击，绘制 ASR 条形图 (使用虚线边框)
     if any(asr > 0 for asr in fedavg_asrs + balance_asrs):
          ax.bar(x - width/2, fedavg_asrs, width, label='FedAvg (Max.ASR)', color='salmon', edgecolor='black', hatch='//')
          ax.bar(x + width/2, balance_asrs, width, label='BALANCE (Max.ASR)', color='skyblue', edgecolor='black', hatch='\\\\')

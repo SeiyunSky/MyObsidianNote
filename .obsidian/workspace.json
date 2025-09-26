@@ -11,14 +11,14 @@
             "id": "4aa55184634efe52",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "论文研究/2025.9.29/综述阅读笔记.md",
-                "mode": "source",
-                "source": false
+                "aFile": "论文研究/2025.9.29/综述阅读笔记.md",
+                "bFile": "论文研究/2025.9.29/综述阅读笔记.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "综述阅读笔记"
+              "icon": "diff",
+              "title": "Diff: 综述阅读笔记"
             }
           }
         ]
@@ -182,13 +182,15 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "17ea7eeb48a627de",
+  "active": "4aa55184634efe52",
   "lastOpenFiles": [
+    "后端开发学习/Linux/Linux用户及文件.md",
+    "后端开发学习/Linux/Linux常用命令.md",
+    "论文研究/2025.9.29/综述阅读笔记.md",
     "论文研究/2025.9.29/图片/Pasted image 20250923214231.png",
     "论文研究/2025.9.29/图片/Pasted image 20250923190939.png",
     "论文研究/2025.9.29/图片",
     "论文研究/2025.9.14 均衡联邦算法/Balanced Federal.md",
-    "论文研究/2025.9.29/综述阅读笔记.md",
     "论文研究/2025.9.29/IDEA.md",
     "论文研究/2025.9.29/图片/Pasted image 20250923203748.png",
     "论文研究/2025.9.29/图片/Pasted image 20250923203744.png",
@@ -198,7 +200,6 @@
     "论文研究/2025.9.29/图片/Pasted image 20250923201411.png",
     "论文研究/2025.9.29/图片/Pasted image 20250923192111.png",
     "论文研究/2025.9.29/图片/Pasted image 20250923191919.png",
-    "论文研究/2025.9.29/图片/Pasted image 20250923191855.png",
     "论文研究/2025.9.21/Balance Federal 简易复现.md",
     "论文研究/2025.9.29",
     "论文研究/未命名.md",
@@ -221,7 +222,6 @@
     "后端开发学习/JAVA/JAVA基础/8、多线程.md",
     "后端开发学习/JAVA/JAVA基础/7.3 IO练习.md",
     "后端开发学习/JAVA/JAVA基础/7.1 Commons-io.md",
-    "后端开发学习/JAVA/JAVA基础/4、方法引用.md",
     "后端开发学习/JUC",
     "后端开发学习/新建文件夹",
     "后端开发学习/Linux/Linux",
