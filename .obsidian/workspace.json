@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "de3c51aae7648a20",
+        "id": "bb9d8e5618ecb74a",
         "type": "tabs",
         "children": [
           {
-            "id": "4aa55184634efe52",
+            "id": "1df79e8e276bc8c8",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "论文研究/2025.9.29/综述阅读笔记.md",
-                "bFile": "论文研究/2025.9.29/综述阅读笔记.md",
-                "aRef": ""
+                "file": "Unity/项目笔记：Slay the spire/Game Action System.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 综述阅读笔记"
+              "icon": "lucide-file",
+              "title": "Game Action System"
             }
           }
         ]
