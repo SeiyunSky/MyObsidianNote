@@ -10,6 +10,7 @@
 
 ### **存在拜占庭节点下的学习目标是什么**
 在存在拜占庭节点的情况下，寻求系统所有节点上定义的平均损失函数的临界点（或最小值）的原始目标将无法再实现。为什么：
-[Fault-tolerant multi-agent optimization: Optimal iterative distributed algorithms](obsidian://open?vault=Note&file=%E8%AE%BA%E6%96%87%E7%A0%94%E7%A9%B6%2F2025.10.9%2F3.1)
+[Byzantine Multi-Agent Optimization– Part I⋆](obsidian://open?vault=Note&file=%E8%AE%BA%E6%96%87%E7%A0%94%E7%A9%B6%2F2025.10.9%2F3.1Byzantine%20Multi-Agent%20Optimization%E2%80%93%20Part%20I%E2%8B%86)
+由上文的例子引出——鲁棒性的核心概念。
 
 
