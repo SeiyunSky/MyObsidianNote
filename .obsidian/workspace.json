@@ -11,14 +11,12 @@
             "id": "1df79e8e276bc8c8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "论文研究/2025.10.9/组会准备.md",
-                "mode": "source",
-                "source": false
+                "file": "论文研究/2025.10.9/图片/Pasted image 20251003113630.png"
               },
-              "icon": "lucide-file",
-              "title": "组会准备"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251003113630"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -143,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "项目笔记：牛券Coupon/业务架构.md",
+                "file": "论文研究/2025.10.9/图片/Pasted image 20251003113630.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "业务架构 的大纲"
+              "title": "Pasted image 20251003113630 的大纲"
             }
           },
           {
@@ -183,28 +180,33 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "1df79e8e276bc8c8",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "论文研究/2025.10.9/图片/Pasted image 20251003113659.png",
+    "论文研究/2025.10.9/3、Byzantine Machine Learning A Primer.md",
+    "论文研究/2025.10.9/2、Can Decentralized Algorithms Outperform Centralized Algorithms.A Case Study for Decentralized Parallel Stochastic Gradient Descen.md",
+    "论文研究/2025.10.9/1、FedAvg.md",
+    "论文研究/2025.10.9/组会准备.md",
     "论文研究/2025.10.9/综述阅读笔记.md",
+    "论文研究/2025.10.9/3.1Fault-tolerant multi-agent optimization.md",
+    "论文研究/2025.10.9/图片/Pasted image 20251003142232.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003142150.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003142016.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003141613.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003141105.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003140942.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003140445.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003135802.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003135512.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251003135348.png",
+    "论文研究/2025.9.14 均衡联邦算法/Balanced Federal.md",
     "论文研究/2025.9.29/常见攻击方法.md",
     "论文研究/2025.9.29/综述阅读笔记——集中式经验法.md",
-    "论文研究/2025.10.9/组会准备.md",
-    "论文研究/2025.9.14 均衡联邦算法/Balanced Federal.md",
     "论文研究/2025.9.14 均衡联邦算法/L-smooth函数相关推导：梯度Lipschitz连续与二次上界的等价性证明.md",
     "论文研究/2025.9.29/IDEA.md",
-    "论文研究/2025.10.9/图片/Pasted image 20251001161911.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251001161554.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251001160544.png",
-    "论文研究/2025.10.9/图片/Pasted image 20250928210137.png",
-    "论文研究/2025.10.9/图片/8961819c4d94f717b66710d516c11a89.png",
-    "论文研究/2025.10.9/图片/Pasted image 20250929222357.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251001160116.png",
     "未命名.md",
     "论文研究/2025.10.9/图片",
     "论文研究/2025.10.9",
-    "论文研究/2025.9.29/图片/Pasted image 20250928191044.png",
-    "论文研究/2025.9.29/图片/Pasted image 20250928190948.png",
-    "论文研究/2025.9.29/图片/Pasted image 20250928190424.png",
     "Unity/项目笔记：Slay the spire/Game Action System.md",
     "后端开发学习/Linux/Linux用户及文件.md",
     "后端开发学习/Linux/Linux常用命令.md",
@@ -220,11 +222,6 @@
     "后端开发学习/JAVA/JAVA基础/2.4 不可变集合.md",
     "后端开发学习/JAVA/JAVA基础/2.3 Collections 工具类.md",
     "后端开发学习/JAVA/知识碎片/IoC 和 APO.md",
-    "后端开发学习/JAVA/知识碎片/Java并发与框架部分知识.md",
-    "后端开发学习/JAVA/知识碎片/注解.md",
-    "后端开发学习/JAVA/知识碎片/设计原则.md",
-    "Unity/1、Csharp设计模式专题.md",
-    "后端开发学习/JAVA/JAVA基础/2.1 HashMap源码分析.md",
     "后端开发学习/JUC",
     "后端开发学习/新建文件夹",
     "后端开发学习/Linux/Linux",
