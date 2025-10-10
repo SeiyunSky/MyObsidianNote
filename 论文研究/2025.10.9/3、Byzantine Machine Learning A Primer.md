@@ -17,22 +17,21 @@
 由上文的例子引出——鲁棒性的核心概念。
 
 ### 拜占庭攻击的常见方法
-#### 1. 高斯噪声攻击 (Gaussian Attack)
+##### 高斯噪声攻击 (Gaussian Attack)
 这是最简单、最直观的攻击之一。
 - **攻击方法**: 恶意的客户端不发送自己真实的本地更新，而是发送从一个高斯分布（通常是零均值、高方差）中采样出的随机向量。
 - **攻击目的**: 向聚合过程注入大量噪声，干扰全局模型的收敛方向，导致模型性能下降或无法收敛。
 - **参考论文**:
     
     - **Blanchard, Peva, et al. "Machine learning with adversaries: Byzantine tolerant gradient descent." (NeurIPS 2017)** 这篇论文是拜占庭鲁棒聚合研究的里程碑之作，其中就使用了高斯噪声攻击作为评估其防御算法（如 Krum, Multi-Krum）有效性的基准。
-
-#### 2. 符号翻转攻击 (Sign-Flipping Attack)
+##### 符号翻转攻击 (Sign-Flipping Attack)
 这是一种非常强大且难以检测的攻击。
 - **攻击方法**: 恶意客户端计算出真实的本地梯度更新 g，然后将其每个元素的方向（符号）翻转，发送 -λg（其中 λ 是一个攻击者控制的缩放因子）。
 - **攻击目的**: 这种攻击的巧妙之处在于，它使得聚合器（服务器）朝着与正确方向完全相反的方向更新模型。由于攻击者可以调整 λ，使得攻击梯度的模长与正常梯度相似，从而很难被基于范数的异常检测算法发现。
 - **参考论文**:
     - **Fang, Minghong, et al. "Local model poisoning attacks to byzantine-robust federated learning." (USENIX Security Symposium 2020)** 这篇论文深入分析了针对当时主流的鲁棒聚合规则（如 Krum, Bulyan, Trimmed Mean）的攻击策略，并着重介绍了符号翻转攻击的变种及其有效性。
 
-#### 3. 标签翻转攻击 (Label-Flipping Attack)
+##### 标签翻转攻击 (Label-Flipping Attack)
 这是一种数据中毒（Data Poisoning）攻击，在训练阶段污染数据源。
 - **攻击方法**: 恶意客户端在本地训练时，故意将一部分训练数据的标签修改为错误的类别。例如，将所有“猫”的图片标签改为“狗”。然后，它基于这些被污染的数据计算并上传一个“诚实”的梯度。
 - **攻击目的**: 使全局模型学习到错误的特征映射，降低其在特定类别或所有类别上的准确率。这种攻击也可以被用来实现“后门攻击”（Backdoor Attack）。
@@ -40,7 +39,7 @@
     - **Biggio, Battista, et al. "Poisoning attacks against support vector machines." (ICML 2012)** 这是数据中毒领域的早期经典之作，虽然不直接针对联邦学习，但为标签翻转攻击奠定了理论基础。
     - **Fung, Clement, et al. "Mitigating sybils in federated learning poisoning." (RAID 2018)** 这篇论文探讨了联邦学习场景下的数据中毒问题，包括标签翻转。
 
-#### 4. 模型中毒/后门攻击 (Model Poisoning / Backdoor Attack)
+##### 模型中毒/后门攻击 (Model Poisoning / Backdoor Attack)
 这是一种更高级、更有针对性的攻击，其目的不是让模型完全失效，而是植入后门。
 - **攻击方法**: 攻击者设定一个“触发器”（trigger），例如图片中的一个小方块或特定的logo。然后，他们通过污染本地数据（例如，将带有触发器的“猫”图片标记为“狗”）来训练模型。最终，恶意客户端上传一个旨在增强这种“触发器-目标标签”关联性的梯度更新
 - **攻击目的**: 训练出的全局模型在正常数据上表现完全正常。但是，一旦输入的数据中包含那个特定的“触发器”，模型就会以极高的置信度将其错误分类到攻击者指定的目标类别。
@@ -48,7 +47,7 @@
     - **Bagdasaryan, Eugene, et al. "How to backdoor federated learning." (AISTATS 2020)** 这是联邦学习后门攻击领域的开创性工作，详细描述了如何通过模型替换（Model Replacement）等方式高效地植入后门。
     - **Wang, Hongyi, et al. "Attack of the tails: Yes, you really can backdoor federated learning." (NeurIPS 2020)** 这篇论文提出了一种更隐蔽的后门攻击方法，即使在数据分布异构（Non-IID）的情况下也同样有效。
 
-#### 5. 功能中毒攻击 (Function-Poisoning Attack)
+##### 功能中毒攻击 (Function-Poisoning Attack)
 这是一种相对较新的攻击范式，其目标是让模型在某个特定的子任务上失效。
 - **攻击方法**: 攻击者不关心全局模型的整体性能，而是希望破坏模型执行某项特定功能的能力。例如，在一个自动驾驶的多任务模型中，让它在“识别交通标志”这个子功能上表现很差，但在其他功能（如车道保持）上表现正常。
 - **攻击目的**: 精准破坏模型的特定功能，比单纯降低整体准确率更隐蔽、更有害。
