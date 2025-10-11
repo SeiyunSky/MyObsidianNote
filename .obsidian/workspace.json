@@ -11,10 +11,12 @@
             "id": "bcb684804df78455",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "image",
+              "state": {
+                "file": "论文研究/2025.10.9/图片/Pasted image 20251011151614.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20251011151614"
             }
           }
         ]
@@ -70,13 +72,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -180,26 +180,27 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "bcb684804df78455",
+  "active": "65ef5e3f6999041c",
   "lastOpenFiles": [
-    "论文研究/2025.10.9/3.1Byzantine Multi-Agent Optimization– Part I⋆.md",
-    "论文研究/2025.10.9/3、Byzantine Machine Learning A Primer.md",
+    "论文研究/2025.10.9/5. krum和multikrum.md",
+    "论文研究/2025.10.9/图片/Pasted image 20251011172200.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011171813.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011171721.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011171608.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011171226.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011170829.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011170751.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011165852.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011165809.png",
+    "论文研究/2025.10.9/图片/Pasted image 20251011165720.png",
     "论文研究/2025.10.9/组会准备.md",
-    "论文研究/2025.10.9/4. 坐标中位数与均值裁剪.md",
     "论文研究/2025.10.9/Byzantine Stochastic Gradient Descent.md",
+    "论文研究/2025.10.9/3、Byzantine Machine Learning A Primer.md",
+    "论文研究/2025.10.9/4. 坐标中位数与均值裁剪.md",
     "论文研究/2025.10.9/综述阅读笔记.md",
-    "论文研究/2025.10.9/图片/Pasted image 20251010213238.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251010231824.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251010224047.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251010220901.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251010220857.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251010220854.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251010220852.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251010213414.png",
+    "论文研究/2025.10.9/3.1Byzantine Multi-Agent Optimization– Part I⋆.md",
     "论文研究/2025.10.9/2、Can Decentralized Algorithms Outperform Centralized Algorithms.A Case Study for Decentralized Parallel Stochastic Gradient Descen.md",
     "论文研究/2025.10.9/1、FedAvg.md",
-    "论文研究/2025.10.9/图片/Pasted image 20251003211156.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251003210559.png",
     "论文研究/2025.9.29/综述阅读笔记——集中式经验法.md",
     "论文研究/2025.9.29/常见攻击方法.md",
     "论文研究/2025.9.21/组会：学习算法的稳定性和泛化性介绍.md",
@@ -220,7 +221,6 @@
     "后端开发学习/JAVA/JAVA基础/2、集合进阶.md",
     "后端开发学习/JAVA/JAVA基础/1、常用API.md",
     "后端开发学习/JUC/JUC笔记.md",
-    "后端开发学习/JAVA/JAVA基础/2.4 不可变集合.md",
     "后端开发学习/JUC",
     "后端开发学习/新建文件夹",
     "后端开发学习/Linux/Linux",
