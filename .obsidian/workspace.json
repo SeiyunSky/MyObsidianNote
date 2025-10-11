@@ -11,12 +11,14 @@
             "id": "bcb684804df78455",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "论文研究/2025.10.9/图片/Pasted image 20251011151614.png"
+                "file": "后端开发学习/JAVA/JAVA基础/2、集合进阶.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251011151614"
+              "icon": "lucide-file",
+              "title": "2、集合进阶"
             }
           }
         ]
@@ -180,8 +182,9 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "65ef5e3f6999041c",
+  "active": "bcb684804df78455",
   "lastOpenFiles": [
+    "论文研究/2025.10.9/图片/Pasted image 20251011151614.png",
     "论文研究/2025.10.9/5. krum和multikrum.md",
     "论文研究/2025.10.9/图片/Pasted image 20251011172200.png",
     "论文研究/2025.10.9/图片/Pasted image 20251011171813.png",
