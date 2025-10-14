@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI开发学习/AI开发学习/2、Pytorch/用PyTorch实现线性回归.md",
+                "file": "AI开发学习/AI开发学习/3、逻辑回归/3.2 多元逻辑回归.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "用PyTorch实现线性回归"
+              "title": "3.2 多元逻辑回归"
             }
           }
         ]
@@ -182,8 +182,21 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "bcb684804df78455",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "AI开发学习/AI开发学习/3、逻辑回归/3.1 一元逻辑回归.md",
+    "AI开发学习/AI开发学习/3、逻辑回归/3.2 多元逻辑回归.md",
+    "Pasted image 20251014210128.png",
+    "Pasted image 20251014210128 1.png",
+    "AI开发学习/AI开发学习/3、逻辑回归/图片/Pasted image 20251014205834.png",
+    "AI开发学习/AI开发学习/3、逻辑回归/图片/Pasted image 20251014210114.png",
+    "推荐算法学习.md",
+    "AI开发学习/AI开发学习/2、Pytorch/Normalization.md",
+    "AI开发学习/AI开发学习/3、逻辑回归/图片",
+    "AI开发学习/AI开发学习/3、逻辑回归",
+    "AI开发学习/AI开发学习/2、Pytorch/优美Loss曲线.md",
+    "AI开发学习/AI开发学习/2、Pytorch/用PyTorch实现线性回归.md",
+    "AI开发学习/AI开发学习/基本学习思路.md",
     "论文研究/2025.10.9/图片/Pasted image 20251012200542.png",
     "AI开发学习/AI开发学习/2、Pytorch/图片/Pasted image 20251014171936.png",
     "AI开发学习/AI开发学习/2、Pytorch/图片/Pasted image 20251014170326.png",
@@ -193,29 +206,22 @@
     "AI开发学习/AI开发学习/基本数学知识/概率统计.md",
     "AI开发学习/AI开发学习/基本数学知识/微积分.md",
     "AI开发学习/AI开发学习/2、Pytorch/计算图与自动求梯度.md",
-    "AI开发学习/AI开发学习/2、Pytorch/用PyTorch实现线性回归.md",
     "AI开发学习/AI开发学习/2、Pytorch/图片",
     "AI开发学习/AI开发学习/2、Pytorch/2.1 Pytorch.md",
     "AI开发学习/AI开发学习/1、线性回归/图片",
     "AI开发学习/AI开发学习/1、线性回归/线性回归.md",
     "AI开发学习/AI开发学习/基本数学知识",
     "AI开发学习/AI开发学习/2、Pytorch",
-    "AI开发学习/AI开发学习/基本学习思路.md",
     "AI开发学习/AI开发学习/1、线性回归",
     "AI开发学习/AI开发学习",
     "AI开发学习",
     "论文研究/2025.10.9/组会准备.md",
     "论文研究/2025.10.9/5. krum和multikrum.md",
     "论文研究/2025.10.9/图片/Pasted image 20251012202711.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251012202602.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251012202529.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251012201117.png",
-    "论文研究/2025.10.9/图片/Pasted image 20251012200850.png",
     "论文研究/2025.10.9/4. 坐标中位数与均值裁剪.md",
     "论文研究/2025.10.9/综述阅读笔记.md",
     "论文研究/2025.9.14 均衡联邦算法/Balanced Federal.md",
     "后端开发学习/JAVA/JAVA基础/2、集合进阶.md",
-    "论文研究/2025.10.9/图片/Pasted image 20251011151614.png",
     "论文研究/2025.10.9/Byzantine Stochastic Gradient Descent.md",
     "论文研究/2025.10.9/3、Byzantine Machine Learning A Primer.md",
     "论文研究/2025.10.9/3.1Byzantine Multi-Agent Optimization– Part I⋆.md",
@@ -223,13 +229,7 @@
     "论文研究/2025.10.9/1、FedAvg.md",
     "论文研究/2025.9.29/综述阅读笔记——集中式经验法.md",
     "论文研究/2025.9.29/常见攻击方法.md",
-    "论文研究/2025.9.21/组会：学习算法的稳定性和泛化性介绍.md",
-    "论文研究/2025.9.21/Balance Federal 简易复现.md",
-    "论文研究/2025.9.14 均衡联邦算法/L-smooth函数相关推导：梯度Lipschitz连续与二次上界的等价性证明.md",
-    "论文研究/2025.9.29/IDEA.md",
     "论文研究/2025.10.9/图片",
-    "论文研究/2025.10.9",
-    "论文研究/2025.9.29/图片",
     "未命名.canvas"
   ]
 }
