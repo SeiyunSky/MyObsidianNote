@@ -22,7 +22,6 @@
 - **攻击方法**: 恶意的客户端不发送自己真实的本地更新，而是发送从一个高斯分布（通常是零均值、高方差）中采样出的随机向量。
 - **攻击目的**: 向聚合过程注入大量噪声，干扰全局模型的收敛方向，导致模型性能下降或无法收敛。
 - **参考论文**:
-    
     - **Blanchard, Peva, et al. "Machine learning with adversaries: Byzantine tolerant gradient descent." (NeurIPS 2017)** 这篇论文是拜占庭鲁棒聚合研究的里程碑之作，其中就使用了高斯噪声攻击作为评估其防御算法（如 Krum, Multi-Krum）有效性的基准。
 ##### 符号翻转攻击 (Sign-Flipping Attack)
 这是一种非常强大且难以检测的攻击。
