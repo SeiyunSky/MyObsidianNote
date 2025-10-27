@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文研究/2025.10.19/记录.md",
+                "file": "论文研究/2025.10.27/关于拜占庭容错分布式优化算法的几何收敛性.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "记录"
+              "title": "关于拜占庭容错分布式优化算法的几何收敛性"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
+    "论文研究/2025.10.19/记录.md",
     "论文研究/2025.10.27/关于拜占庭容错分布式优化算法的几何收敛性.md",
     "Pasted image 20251027202912.png",
     "Pasted image 20251027202857.png",
