@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,7 +182,7 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "b02451bf16190f8b",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
     "论文研究/2025.10.27/图片/Pasted image 20251027165138.png",
     "计划安排/2025-10-28.md",
