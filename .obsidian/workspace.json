@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计划安排/2025-10-28.md",
+                "file": "项目笔记：牛券Coupon/基于注解实现分布式锁.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-28"
+              "title": "基于注解实现分布式锁"
             }
           }
         ]
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,10 +182,29 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "b02451bf16190f8b",
+  "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
-    "论文研究/2025.10.27/图片/Pasted image 20251027165138.png",
     "计划安排/2025-10-28.md",
+    "项目笔记：牛券Coupon/图片/Pasted image 20251028163240.png",
+    "项目笔记：牛券Coupon/图片/Pasted image 20251028171004.png",
+    "项目笔记：牛券Coupon/图片/Pasted image 20250821165100.png",
+    "项目笔记：牛券Coupon/图片/Pasted image 20250821165026.png",
+    "项目笔记：牛券Coupon/图片/Pasted image 20250821163822.png",
+    "项目笔记：牛券Coupon/图片/Pasted image 20250821163850.png",
+    "项目笔记：牛券Coupon/图片",
+    "项目笔记：牛券Coupon/责任链实现.md",
+    "项目笔记：牛券Coupon/基于注解实现分布式锁.md",
+    "项目笔记：牛券Coupon/业务架构.md",
+    "项目笔记：牛券Coupon",
+    "后端开发学习/图论笔记/2、广搜理论基础.md",
+    "后端开发学习/图论笔记/1、可达路径.md",
+    "后端开发学习/图论笔记",
+    "图论笔记/2、广搜理论基础.md",
+    "图论笔记/1、可达路径.md",
+    "图论笔记",
+    "后端开发学习/JUnit/Junit内容.md",
+    "后端开发学习/JUnit",
+    "论文研究/2025.10.27/图片/Pasted image 20251027165138.png",
     "计划安排",
     "论文研究/2025.10.27/图片",
     "论文研究/2025.10.27/关于拜占庭容错分布式优化算法的几何收敛性.md",
@@ -194,13 +212,9 @@
     "论文研究/2025.10.27/图片/Pasted image 20251027202912.png",
     "论文研究/2025.10.27/图片/Pasted image 20251027202857.png",
     "论文研究/2025.10.27/图片/Pasted image 20251027170953.png",
-    "论文研究/2025.10.27/图片/Pasted image 20251027170920.png",
-    "论文研究/2025.10.27/图片/Pasted image 20251027170840.png",
-    "论文研究/2025.10.27/图片/Pasted image 20251027170727.png",
     "[On.md",
     "().md",
     "论文研究/2025.10.27",
-    "论文研究/2025.10.19/图片/Pasted image 20251025155656.png",
     "论文研究/2025.10.19/7. FLTrust.md",
     "论文研究/2025.10.19/图片",
     "论文研究/2025.10.23/图片.md",
@@ -211,25 +225,10 @@
     "论文研究/2025.10.9/1、FedAvg.md",
     "论文研究/2025.9.21/Balance Federal 简易复现.md",
     "论文研究/2025.9.21/组会：学习算法的稳定性和泛化性介绍.md",
-    "论文研究/2025.10.19/图片/Pasted image 20251025164053.png",
-    "论文研究/2025.10.19/图片/Pasted image 20251025163753.png",
     "论文研究/2025.10.9/5. krum和multikrum.md",
     "论文研究/2025.10.9/组会准备.md",
     "论文研究/2025.10.9/综述阅读笔记.md",
-    "论文研究/2025.10.19/6. Bulyan.md",
-    "论文研究/2025.10.9/2、Can Decentralized Algorithms Outperform Centralized Algorithms.A Case Study for Decentralized Parallel Stochastic Gradient Descen.md",
-    "论文研究/2025.10.9/Byzantine Stochastic Gradient Descent.md",
-    "论文研究/2025.9.14 均衡联邦算法/Balanced Federal.md",
-    "AI开发学习/AI开发学习/基本数学知识/线性代数.md",
-    "AI开发学习/AI开发学习/基本数学知识/微积分.md",
-    "AI开发学习/AI开发学习/基本数学知识/概率统计.md",
-    "AI开发学习/AI开发学习/常用库/Pandas.md",
-    "AI开发学习/AI开发学习/6、卷积神经网络/图片",
-    "AI开发学习/AI开发学习/6、卷积神经网络",
-    "AI开发学习/AI开发学习/5、优化深度神经网络/图片",
-    "AI开发学习/AI开发学习/5、优化深度神经网络",
-    "AI开发学习/AI开发学习/4、神经网络/图片",
-    "AI开发学习/AI开发学习/4、神经网络",
+    "AI开发学习/6、卷积神经网络/图片",
     "未命名.canvas"
   ]
 }
