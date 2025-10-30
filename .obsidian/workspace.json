@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文研究/2025.10.27/关于拜占庭容错分布式优化算法的几何收敛性.md",
+                "file": "论文研究/2025.10.27/思路.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "关于拜占庭容错分布式优化算法的几何收敛性"
+              "title": "思路"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -185,20 +184,30 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
-    "Pasted image 20251028205159.png",
-    "Pasted image 20251028205148.png",
-    "Pasted image 20251028205132.png",
-    "Pasted image 20251028205118.png",
-    "Pasted image 20251028205038.png",
-    "Pasted image 20251028202534.png",
-    "Pasted image 20251028202529.png",
-    "Pasted image 20251028202521.png",
-    "Pasted image 20251028202028.png",
+    "论文研究/2025.10.19/7. FLTrust.md",
+    "论文研究/2025.10.27/思路.md",
+    "论文研究/2025.10.19/6. Bulyan.md",
+    "论文研究/2025.10.9/Byzantine Stochastic Gradient Descent.md",
+    "论文研究/2025.10.27/关于拜占庭容错分布式优化算法的几何收敛性.md",
+    "论文研究/2025.10.9/5. krum和multikrum.md",
+    "论文研究/2025.10.19/8、去中心化传统方法的弊病.md",
+    "论文研究/2025.10.27/一点疑问.md",
+    "论文研究/2025.10.9/组会准备.md",
+    "论文研究/2025.10.9/3.1Byzantine Multi-Agent Optimization– Part I⋆.md",
+    "论文研究/2025.10.9/3、Byzantine Machine Learning A Primer.md",
+    "论文研究/2025.10.27/图片/Pasted image 20251028202028.png",
+    "论文研究/2025.10.27/图片/Pasted image 20251028205159.png",
+    "论文研究/2025.10.27/图片/Pasted image 20251028205148.png",
+    "论文研究/2025.10.27/图片/Pasted image 20251028205132.png",
+    "论文研究/2025.10.27/图片/Pasted image 20251028205118.png",
+    "论文研究/2025.10.27/图片/Pasted image 20251028205038.png",
+    "论文研究/2025.10.27/图片/Pasted image 20251028202534.png",
+    "论文研究/2025.10.27/图片/Pasted image 20251028202529.png",
+    "论文研究/2025.10.27/图片/Pasted image 20251028202521.png",
     "计划安排/2025-10-28.md",
     "项目笔记：牛券Coupon/业务架构.md",
     "项目笔记：牛券Coupon/基于注解实现分布式锁.md",
     "项目笔记：牛券Coupon/图片/Pasted image 20251028163240.png",
-    "项目笔记：牛券Coupon/图片/Pasted image 20251028171004.png",
     "项目笔记：牛券Coupon/图片",
     "项目笔记：牛券Coupon/责任链实现.md",
     "项目笔记：牛券Coupon",
@@ -212,24 +221,14 @@
     "后端开发学习/JUnit",
     "计划安排",
     "论文研究/2025.10.27/图片",
-    "论文研究/2025.10.27/关于拜占庭容错分布式优化算法的几何收敛性.md",
     "论文研究/2025.10.19/记录.md",
     "[On.md",
     "().md",
     "论文研究/2025.10.27",
-    "论文研究/2025.10.19/7. FLTrust.md",
     "论文研究/2025.10.19/图片",
     "论文研究/2025.10.23/图片.md",
-    "论文研究/2025.10.9/3.1Byzantine Multi-Agent Optimization– Part I⋆.md",
-    "论文研究/2025.10.9/3、Byzantine Machine Learning A Primer.md",
     "论文研究/2025.9.29/综述阅读笔记——集中式经验法.md",
     "论文研究/2025.9.29/常见攻击方法.md",
-    "论文研究/2025.10.9/1、FedAvg.md",
-    "论文研究/2025.9.21/Balance Federal 简易复现.md",
-    "论文研究/2025.9.21/组会：学习算法的稳定性和泛化性介绍.md",
-    "论文研究/2025.10.9/5. krum和multikrum.md",
-    "论文研究/2025.10.9/组会准备.md",
-    "论文研究/2025.10.9/综述阅读笔记.md",
     "AI开发学习/6、卷积神经网络/图片",
     "未命名.canvas"
   ]
