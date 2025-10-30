@@ -4,21 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6a2f8de5e6783b21",
+        "id": "d56a7170fa569255",
         "type": "tabs",
         "children": [
           {
-            "id": "b02451bf16190f8b",
+            "id": "a78776b0860cd9ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文研究/2025.10.27/思路.md",
+                "file": "论文研究/2025.10.27/思路介绍.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "思路"
+              "title": "思路介绍"
             }
           }
         ]
@@ -78,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 204.50152206420898
   },
   "right": {
     "id": "873e482e57bc17b9",
@@ -89,12 +90,26 @@
         "type": "tabs",
         "children": [
           {
+            "id": "46248d28f6794b2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "论文研究/2025.10.27/思路.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "思路"
+            }
+          },
+          {
             "id": "df2f7f6c41606969",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "论文研究/2025.10.9/1、FedAvg.md",
+                "file": "论文研究/2025.10.27/思路介绍.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "1、FedAvg 的反向链接列表"
+              "title": "思路介绍 的反向链接列表"
             }
           },
           {
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "论文研究/2025.10.9/1、FedAvg.md",
+                "file": "论文研究/2025.10.27/思路介绍.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1、FedAvg 的大纲"
+              "title": "思路介绍 的大纲"
             }
           },
           {
@@ -162,11 +177,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 570.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,17 +199,22 @@
   },
   "active": "17ea7eeb48a627de",
   "lastOpenFiles": [
-    "论文研究/2025.10.19/7. FLTrust.md",
+    "论文研究/2025.10.27/图片/Pasted image 20251030222234.png",
     "论文研究/2025.10.27/思路.md",
-    "论文研究/2025.10.19/6. Bulyan.md",
-    "论文研究/2025.10.9/Byzantine Stochastic Gradient Descent.md",
     "论文研究/2025.10.27/关于拜占庭容错分布式优化算法的几何收敛性.md",
-    "论文研究/2025.10.9/5. krum和multikrum.md",
-    "论文研究/2025.10.19/8、去中心化传统方法的弊病.md",
-    "论文研究/2025.10.27/一点疑问.md",
-    "论文研究/2025.10.9/组会准备.md",
     "论文研究/2025.10.9/3.1Byzantine Multi-Agent Optimization– Part I⋆.md",
     "论文研究/2025.10.9/3、Byzantine Machine Learning A Primer.md",
+    "论文研究/2025.10.9/2、Can Decentralized Algorithms Outperform Centralized Algorithms.A Case Study for Decentralized Parallel Stochastic Gradient Descen.md",
+    "论文研究/2025.10.9/4. 坐标中位数与均值裁剪.md",
+    "论文研究/2025.10.9/5. krum和multikrum.md",
+    "论文研究/2025.10.27/思路介绍.md",
+    "论文研究/2025.10.9/1、FedAvg.md",
+    "论文研究/2025.10.19/7. FLTrust.md",
+    "论文研究/2025.10.19/8、去中心化传统方法的弊病.md",
+    "论文研究/2025.10.19/6. Bulyan.md",
+    "论文研究/2025.10.9/Byzantine Stochastic Gradient Descent.md",
+    "论文研究/2025.10.27/一点疑问.md",
+    "论文研究/2025.10.9/组会准备.md",
     "论文研究/2025.10.27/图片/Pasted image 20251028202028.png",
     "论文研究/2025.10.27/图片/Pasted image 20251028205159.png",
     "论文研究/2025.10.27/图片/Pasted image 20251028205148.png",
@@ -222,13 +242,8 @@
     "计划安排",
     "论文研究/2025.10.27/图片",
     "论文研究/2025.10.19/记录.md",
-    "[On.md",
-    "().md",
     "论文研究/2025.10.27",
     "论文研究/2025.10.19/图片",
-    "论文研究/2025.10.23/图片.md",
-    "论文研究/2025.9.29/综述阅读笔记——集中式经验法.md",
-    "论文研究/2025.9.29/常见攻击方法.md",
     "AI开发学习/6、卷积神经网络/图片",
     "未命名.canvas"
   ]
