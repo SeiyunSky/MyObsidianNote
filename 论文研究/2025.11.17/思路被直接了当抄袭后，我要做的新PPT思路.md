@@ -12,4 +12,4 @@
 然后我们就能基于上述分析**得出的界域发现论文的核心框架性**
 
 接下来我们考虑对于收敛速度的影响
-$$\| \mathbf{x}_i[k] - \mathbf{x}^* \| = \| (\mathbf{x}_i[k] - \mathbf{x}_c) - (\mathbf{x}^* - \mathbf{x}_c) \|$$
+$$w^{*}=\operatorname{argmin}_{w} F(w)$$
